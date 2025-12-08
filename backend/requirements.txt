@@ -1,0 +1,25 @@
+# FastAPI and server
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.17
+
+# LangChain ecosystem
+langchain==0.3.12
+langchain-openai==0.2.12
+langchain-community==0.3.12
+langchain-chroma==0.1.4
+
+# Vector store
+chromadb==0.5.23
+
+# OpenAI
+openai==1.58.1
+
+# Environment and config
+python-dotenv==1.0.1
+pydantic==2.10.3
+pydantic-settings==2.6.1
+
+# Utilities
+aiofiles==24.1.0
+

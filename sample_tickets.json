@@ -1,0 +1,93 @@
+[
+  {
+    "id": "T001",
+    "query": "How do I reset my password?",
+    "resolution": "To reset your password: 1) Go to the login page and click 'Forgot Password'. 2) Enter your registered email address. 3) Check your inbox for the reset link (also check spam folder). 4) Click the link and create a new password with at least 8 characters, including one uppercase letter and one number. 5) Log in with your new password.",
+    "category": "account"
+  },
+  {
+    "id": "T002",
+    "query": "Why was I charged twice on my credit card?",
+    "resolution": "Double charges typically appear as pending authorizations and usually resolve within 3-5 business days. If the duplicate charge persists after 5 business days, please contact our billing team at billing@support.com with your order number and we'll process a refund within 24-48 hours.",
+    "category": "billing"
+  },
+  {
+    "id": "T003",
+    "query": "The app crashes when I try to open it",
+    "resolution": "To fix app crashes: 1) Force close the app completely. 2) Clear the app cache (Settings > Apps > Our App > Clear Cache). 3) Ensure your phone has the latest OS update. 4) Uninstall and reinstall the app from the official store. 5) If the issue persists, please share your device model and OS version with our tech team.",
+    "category": "technical"
+  },
+  {
+    "id": "T004",
+    "query": "How can I change my email address?",
+    "resolution": "To update your email address: 1) Log into your account. 2) Go to Settings > Account > Personal Information. 3) Click 'Edit' next to your email address. 4) Enter your new email and confirm with your password. 5) Verify the new email by clicking the confirmation link sent to your new address. Your old email will remain active until verification is complete.",
+    "category": "account"
+  },
+  {
+    "id": "T005",
+    "query": "I want to cancel my subscription",
+    "resolution": "To cancel your subscription: 1) Log into your account. 2) Navigate to Settings > Subscription. 3) Click 'Manage Subscription' then 'Cancel Subscription'. 4) Complete the cancellation survey (optional). 5) You'll receive a confirmation email. Your access continues until the end of your current billing period. You can reactivate anytime before the period ends.",
+    "category": "billing"
+  },
+  {
+    "id": "T006",
+    "query": "How do I enable two-factor authentication?",
+    "resolution": "To enable 2FA for enhanced security: 1) Go to Settings > Security > Two-Factor Authentication. 2) Choose your preferred method: Authenticator App (recommended) or SMS. 3) For Authenticator App: scan the QR code with Google Authenticator or Authy. 4) Enter the 6-digit code to verify. 5) Save your backup codes in a secure location. 2FA will be required on all future logins.",
+    "category": "security"
+  },
+  {
+    "id": "T007",
+    "query": "My payment failed but money was deducted",
+    "resolution": "When a payment shows as failed but money was deducted, it's usually a temporary hold. Here's what to do: 1) Wait 24 hours as most holds are automatically released. 2) If not resolved, the hold will drop off within 5-7 business days. 3) For immediate resolution, contact your bank with our merchant ID: MID-12345. 4) If you need urgent assistance, email billing@support.com with your transaction screenshot.",
+    "category": "billing"
+  },
+  {
+    "id": "T008",
+    "query": "How do I export my data?",
+    "resolution": "To export your data: 1) Go to Settings > Privacy > Data Management. 2) Click 'Request Data Export'. 3) Select what data you want (all data, or specific categories). 4) Confirm your request with your password. 5) We'll prepare your export within 48 hours and send a secure download link to your email. The link expires in 7 days.",
+    "category": "privacy"
+  },
+  {
+    "id": "T009",
+    "query": "The video won't play, just shows loading",
+    "resolution": "To fix video loading issues: 1) Check your internet connection speed (minimum 5 Mbps recommended). 2) Clear browser cache or app cache. 3) Try a different browser or the mobile app. 4) Disable VPN if you're using one. 5) Lower the video quality in Settings > Playback > Quality. 6) If on mobile, try switching between WiFi and cellular data. Contact support if issue persists with your ISP name and speed test results.",
+    "category": "technical"
+  },
+  {
+    "id": "T010",
+    "query": "How do I get a refund?",
+    "resolution": "To request a refund: 1) Refunds are available within 30 days of purchase for unused services. 2) Go to Order History > Select Order > Request Refund. 3) Choose a reason and submit. 4) Refunds are processed within 5-10 business days to your original payment method. 5) For subscription refunds, any partial month usage will be prorated. Contact billing@support.com for special circumstances.",
+    "category": "billing"
+  },
+  {
+    "id": "T011",
+    "query": "I can't log in to my account",
+    "resolution": "If you're having trouble logging in: 1) Verify you're using the correct email (check for typos). 2) Try the 'Forgot Password' option to reset. 3) Clear your browser cookies and cache. 4) Disable browser extensions that might interfere. 5) Check if your account might be locked (you'll receive an email). 6) If you see 'Account not found', you may need to register first. 7) For persistent issues, contact support with your registered email.",
+    "category": "account"
+  },
+  {
+    "id": "T012",
+    "query": "How do I update my billing information?",
+    "resolution": "To update billing information: 1) Log in and go to Settings > Billing > Payment Methods. 2) Click 'Edit' on your current card or 'Add New'. 3) Enter your new card details securely. 4) Set the new card as default if desired. 5) Your next charge will use the updated information. Note: Any pending transactions will still use the old payment method.",
+    "category": "billing"
+  },
+  {
+    "id": "T013",
+    "query": "The notifications are not working",
+    "resolution": "To fix notification issues: 1) Check that notifications are enabled in your device settings (Settings > Notifications > Our App). 2) In the app, go to Settings > Notifications and verify your preferences. 3) Make sure Do Not Disturb mode is off. 4) For Android: check battery optimization isn't blocking the app. 5) For iOS: ensure Background App Refresh is enabled. 6) Try logging out and back in. 7) Reinstall the app if issues persist.",
+    "category": "technical"
+  },
+  {
+    "id": "T014",
+    "query": "How can I contact customer support?",
+    "resolution": "You can reach our customer support through multiple channels: 1) Live Chat: Available 24/7 via the chat icon in the app or website. 2) Email: support@company.com (response within 24 hours). 3) Phone: 1-800-XXX-XXXX (Mon-Fri, 9 AM - 6 PM EST). 4) Social Media: @CompanySupport on Twitter for quick queries. 5) Help Center: help.company.com for self-service articles. Premium members get priority support with 1-hour response times.",
+    "category": "general"
+  },
+  {
+    "id": "T015",
+    "query": "My account was hacked",
+    "resolution": "If you suspect unauthorized access: 1) Immediately change your password from a secure device. 2) Enable two-factor authentication if not already active. 3) Go to Settings > Security > Active Sessions and log out all other devices. 4) Review recent account activity for suspicious actions. 5) Check if your email was changed and revert if needed. 6) Contact security@company.com immediately for account recovery assistance. We may temporarily lock the account for protection.",
+    "category": "security"
+  }
+]
+
