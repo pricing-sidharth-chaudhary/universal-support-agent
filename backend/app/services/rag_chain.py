@@ -1,16 +1,16 @@
-"""RAG Chain Service - Retrieval Augmented Generation"""
+"""RAG Chain Service - Agent-Aware Retrieval Augmented Generation"""
 
 from openai import OpenAI
 from typing import Optional
 
 from app.config import get_settings
-from app.models.schemas import ChatResponse, RetrievedContext
+from app.models.schemas import ChatResponse, RetrievedContext, AgentConfig
 from app.services.vector_store import VectorStoreService
 from app.services.embedding_service import EmbeddingService
 
 
-# System prompt for the AI support agent
-SYSTEM_PROMPT = """You are a helpful AI customer support agent. Your role is to assist users by providing accurate answers based on historical support ticket resolutions.
+# Default system prompt fallback
+DEFAULT_SYSTEM_PROMPT = """You are a helpful AI customer support agent. Your role is to assist users by providing accurate answers based on historical support ticket resolutions.
 
 INSTRUCTIONS:
 1. Use ONLY the provided context from past support tickets to answer questions
@@ -35,7 +35,7 @@ Provide a helpful response based on the above tickets. If none of the tickets ar
 
 
 class RAGChainService:
-    """Service for RAG-based question answering"""
+    """Service for agent-aware RAG-based question answering"""
     
     _instance: Optional["RAGChainService"] = None
     
@@ -79,27 +79,29 @@ Resolution: {ctx.resolution}
     ) -> bool:
         """Determine if the query should be redirected to a human agent"""
         
-        # Check if LLM explicitly indicates redirect
         if "HUMAN_REDIRECT" in llm_response.upper():
             return True
         
-        # Check if no relevant results
         if not retrieved:
             return True
         
-        # Check if best match is below threshold
         best_score = max(ctx.similarity_score for ctx in retrieved)
         if best_score < self.similarity_threshold:
             return True
         
         return False
     
-    async def generate_response(self, question: str) -> ChatResponse:
+    async def generate_response(
+        self, 
+        question: str, 
+        agent_config: AgentConfig
+    ) -> ChatResponse:
         """
-        Generate a response for the user's question using RAG.
+        Generate a response for the user's question using agent-specific RAG.
         
         Args:
             question: User's question
+            agent_config: Configuration for the selected agent
             
         Returns:
             ChatResponse with answer, sources, and human redirect flag
@@ -107,8 +109,9 @@ Resolution: {ctx.resolution}
         # Step 1: Embed the question
         query_embedding = self.embedding_service.embed_text(question)
         
-        # Step 2: Retrieve similar tickets
-        retrieved = self.vector_store.search_similar(
+        # Step 2: Retrieve similar tickets from agent's collection
+        retrieved = self.vector_store.search_similar_in_collection(
+            collection_name=agent_config.collection_name,
             query_embedding=query_embedding,
             top_k=3
         )
@@ -125,9 +128,11 @@ Resolution: {ctx.resolution}
         # Step 4: Format context for LLM
         context = self._format_context(retrieved)
         
-        # Step 5: Generate response using GPT-4o
+        # Step 5: Generate response using agent-specific system prompt
+        system_prompt = agent_config.system_prompt or DEFAULT_SYSTEM_PROMPT
+        
         messages = [
-            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "system", "content": system_prompt},
             {"role": "user", "content": USER_PROMPT_TEMPLATE.format(
                 context=context,
                 question=question
@@ -169,4 +174,3 @@ Resolution: {ctx.resolution}
 def get_rag_chain() -> RAGChainService:
     """FastAPI dependency for RAG chain service"""
     return RAGChainService.get_instance()
-

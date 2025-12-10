@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
 import { Send, Loader2 } from 'lucide-react';
 
-export function ChatInput({ onSend, isLoading, disabled }) {
+export function ChatInput({ onSend, isLoading, disabled, placeholder }) {
   const [input, setInput] = useState('');
 
   const handleSubmit = useCallback((e) => {
@@ -20,7 +20,7 @@ export function ChatInput({ onSend, isLoading, disabled }) {
   }, [handleSubmit]);
 
   return (
-    <form onSubmit={handleSubmit} className="p-4 border-t border-dark-700/50">
+    <form onSubmit={handleSubmit} className="p-4 border-t border-gray-200 bg-white">
       <div className="flex items-center gap-3">
         <div className="flex-1 relative">
           <input
@@ -28,13 +28,13 @@ export function ChatInput({ onSend, isLoading, disabled }) {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder={disabled ? 'Upload tickets to start chatting...' : 'Type your question...'}
+            placeholder={placeholder || 'Type your question...'}
             disabled={isLoading || disabled}
             className={`
               w-full px-4 py-3 pr-12 rounded-xl
-              bg-dark-800 border border-dark-700
-              text-white placeholder-dark-500
-              focus:outline-none focus:border-primary-500/50 focus:ring-2 focus:ring-primary-500/20
+              bg-gray-50 border border-gray-200
+              text-gray-900 placeholder-gray-400
+              focus:outline-none focus:border-bain-red/50 focus:ring-2 focus:ring-bain-red/20 focus:bg-white
               transition-all duration-200
               ${(isLoading || disabled) ? 'opacity-50 cursor-not-allowed' : ''}
             `}
@@ -48,8 +48,8 @@ export function ChatInput({ onSend, isLoading, disabled }) {
             p-3 rounded-xl transition-all duration-200
             flex items-center justify-center
             ${input.trim() && !isLoading && !disabled
-              ? 'bg-gradient-to-r from-primary-500 to-cyan-500 text-white hover:shadow-lg hover:shadow-primary-500/25 hover:scale-105'
-              : 'bg-dark-800 text-dark-500 cursor-not-allowed'
+              ? 'bg-bain-red text-white hover:bg-bain-red-dark hover:shadow-lg hover:shadow-bain-red/25 hover:scale-105'
+              : 'bg-gray-100 text-gray-400 cursor-not-allowed'
             }
           `}
         >
@@ -63,4 +63,3 @@ export function ChatInput({ onSend, isLoading, disabled }) {
     </form>
   );
 }
-

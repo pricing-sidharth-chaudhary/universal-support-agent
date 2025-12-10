@@ -1,0 +1,51 @@
+[
+  {
+    "id": "C001",
+    "query": "How do I set up a new Cortex CRM instance?",
+    "resolution": "To set up a new Cortex CRM instance: 1) Log into the Bain Admin Portal at admin.bain.com. 2) Navigate to Applications > Cortex > New Instance. 3) Select your region (US-East, EU-West, or APAC). 4) Configure initial settings: company name, admin email, timezone. 5) Click 'Provision Instance' - setup takes approximately 15-20 minutes. 6) You'll receive an email with login credentials and onboarding guide.",
+    "category": "setup"
+  },
+  {
+    "id": "C002",
+    "query": "How do I migrate data from Salesforce to Cortex?",
+    "resolution": "To migrate from Salesforce to Cortex: 1) In Cortex, go to Settings > Data > Import. 2) Select 'Salesforce Migration Wizard'. 3) Authenticate with your Salesforce admin credentials. 4) Map fields: Accounts→Companies, Contacts→People, Opportunities→Deals. 5) Choose migration mode: Full or Incremental. 6) Schedule migration during off-peak hours. 7) Review the migration report for any field mapping issues. Typical migration takes 2-4 hours for 100K records.",
+    "category": "migration"
+  },
+  {
+    "id": "C003",
+    "query": "How do I create custom fields in Cortex?",
+    "resolution": "To create custom fields in Cortex: 1) Go to Settings > Customization > Fields. 2) Select the object (Company, Contact, Deal, etc.). 3) Click 'Add Field' and choose field type: Text, Number, Date, Dropdown, Multi-select, or Lookup. 4) Configure field properties: name, API name, required, default value. 5) Set field-level security for different user roles. 6) Click 'Save & Deploy'. Custom fields are immediately available in forms and reports.",
+    "category": "customization"
+  },
+  {
+    "id": "C004",
+    "query": "How do I set up user roles and permissions in Cortex?",
+    "resolution": "To configure roles and permissions: 1) Navigate to Settings > Users > Roles. 2) Create roles: Admin, Manager, Sales Rep, Read-Only (or customize). 3) For each role, set permissions: Create, Read, Update, Delete per object. 4) Configure record visibility: Own Records, Team Records, All Records. 5) Set up sharing rules for cross-team access. 6) Assign roles to users in Settings > Users > User List. Changes apply immediately upon save.",
+    "category": "user_management"
+  },
+  {
+    "id": "C005",
+    "query": "How do I build reports and dashboards in Cortex?",
+    "resolution": "To create reports and dashboards: 1) Go to Analytics > Reports > New Report. 2) Select report type: Tabular, Summary, Matrix, or Joined. 3) Choose primary object and add related objects. 4) Add fields to columns, apply filters and groupings. 5) Save report to a folder. For dashboards: Go to Analytics > Dashboards > New. 6) Add components: charts, tables, metrics, gauges. 7) Link each component to a saved report. 8) Set refresh schedule: Real-time, Hourly, or Daily.",
+    "category": "analytics"
+  },
+  {
+    "id": "C006",
+    "query": "How do I configure email templates in Cortex?",
+    "resolution": "To set up email templates: 1) Go to Communications > Email Templates. 2) Click 'New Template' and select type: Sales, Marketing, or Notification. 3) Use the drag-and-drop editor or HTML mode. 4) Insert merge fields using {{Contact.FirstName}}, {{Deal.Amount}} syntax. 5) Add attachments or dynamic content blocks. 6) Test template with 'Send Test Email'. 7) Set template visibility: Personal, Team, or Organization. Templates can be used in manual emails, workflows, and sequences.",
+    "category": "email"
+  },
+  {
+    "id": "C007",
+    "query": "How do I set up workflow automation in Cortex?",
+    "resolution": "To create workflow automations: 1) Navigate to Automation > Workflows > New. 2) Select trigger: Record Created, Record Updated, Time-Based, or Manual. 3) Define trigger conditions (e.g., Deal Stage = 'Won'). 4) Add actions: Update Field, Send Email, Create Task, Notify User, Call Webhook. 5) Set execution order and add conditional branches if needed. 6) Test workflow with sample records. 7) Activate workflow. Monitor execution in Automation > Workflow Logs.",
+    "category": "automation"
+  },
+  {
+    "id": "C008",
+    "query": "How do I troubleshoot Cortex sync issues?",
+    "resolution": "To troubleshoot sync issues: 1) Check sync status in Settings > Integrations > Sync Status. 2) Review error logs for specific failure messages. 3) Common issues: a) Field mapping mismatch - verify field types match. b) Permission errors - ensure integration user has proper access. c) Rate limits - check API usage in Settings > API > Usage. 4) For immediate fix, try 'Force Resync' on affected records. 5) If issues persist, export sync logs and contact support@bain.com with job ID.",
+    "category": "troubleshooting"
+  }
+]
+

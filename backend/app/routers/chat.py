@@ -1,10 +1,10 @@
-"""Chat Router - Chat endpoint for AI support"""
+"""Chat Router - Agent-aware chat endpoint"""
 
 from fastapi import APIRouter, Depends, HTTPException
 
 from app.models.schemas import ChatRequest, ChatResponse
 from app.services.rag_chain import RAGChainService, get_rag_chain
-from app.services.vector_store import VectorStoreService, get_vector_store
+from app.services.auto_indexer import AutoIndexerService, get_auto_indexer
 
 
 router = APIRouter(prefix="/api", tags=["chat"])
@@ -14,30 +14,42 @@ router = APIRouter(prefix="/api", tags=["chat"])
 async def chat(
     request: ChatRequest,
     rag_chain: RAGChainService = Depends(get_rag_chain),
-    vector_store: VectorStoreService = Depends(get_vector_store)
+    auto_indexer: AutoIndexerService = Depends(get_auto_indexer)
 ):
     """
-    Send a message to the AI support agent.
+    Send a message to a specific AI support agent.
     
     The agent will:
-    1. Search for similar questions in the indexed support tickets
+    1. Search for similar questions in its indexed knowledge base
     2. Use the relevant resolutions to generate a helpful response
     3. If no relevant information is found, indicate that a human agent is needed
     """
-    # Check if vector store has data
-    ticket_count = vector_store.get_ticket_count()
-    if ticket_count == 0:
+    # Get agent configuration
+    agent = auto_indexer.get_agent(request.agent_id)
+    
+    if not agent:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Agent '{request.agent_id}' not found"
+        )
+    
+    # Check if agent's knowledge base has data
+    status = auto_indexer.get_agent_status(request.agent_id)
+    
+    if not status.get("is_ready"):
         raise HTTPException(
             status_code=400,
-            detail="No support tickets indexed. Please upload a tickets file first."
+            detail=f"Agent '{request.agent_id}' is not ready. Knowledge base is empty."
         )
     
     try:
-        response = await rag_chain.generate_response(request.question)
+        response = await rag_chain.generate_response(
+            question=request.question,
+            agent_config=agent
+        )
         return response
     except Exception as e:
         raise HTTPException(
             status_code=500,
             detail=f"Error generating response: {str(e)}"
         )
-

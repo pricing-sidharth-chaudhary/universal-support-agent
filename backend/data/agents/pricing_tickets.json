@@ -1,0 +1,51 @@
+[
+  {
+    "id": "P001",
+    "query": "What are the different pricing tiers available?",
+    "resolution": "We offer three pricing tiers: 1) Starter - $29/month for up to 5 users with basic features. 2) Professional - $79/month for up to 25 users with advanced analytics and priority support. 3) Enterprise - Custom pricing for unlimited users with dedicated account manager, SSO, and custom integrations. All plans include a 14-day free trial.",
+    "category": "pricing_plans"
+  },
+  {
+    "id": "P002",
+    "query": "How do I get a discount for annual billing?",
+    "resolution": "Annual billing provides a 20% discount compared to monthly billing. To switch: 1) Go to Settings > Billing > Subscription. 2) Click 'Switch to Annual'. 3) You'll see the prorated amount and new annual price. 4) Confirm the change. The discount applies immediately, and you'll be charged the annual rate on your next billing date.",
+    "category": "discounts"
+  },
+  {
+    "id": "P003",
+    "query": "Can I upgrade my plan mid-cycle?",
+    "resolution": "Yes, you can upgrade your plan at any time. When upgrading mid-cycle: 1) The price difference is prorated for the remaining days. 2) New features are available immediately. 3) Go to Settings > Billing > Change Plan. 4) Select your new tier and confirm. Your next bill will reflect the new plan price.",
+    "category": "plan_changes"
+  },
+  {
+    "id": "P004",
+    "query": "Is there a discount for non-profit organizations?",
+    "resolution": "Yes, we offer a 50% discount for verified non-profit organizations. To apply: 1) Email sales@company.com with your 501(c)(3) documentation. 2) Include your organization name and current subscription email. 3) Our team will verify within 2-3 business days. 4) Once approved, the discount applies to your next billing cycle and all future charges.",
+    "category": "discounts"
+  },
+  {
+    "id": "P005",
+    "query": "What happens when I exceed my user limit?",
+    "resolution": "When you reach your plan's user limit: 1) You'll receive a notification at 80% and 100% capacity. 2) You can still access the system but cannot add new users. 3) To add more users, either upgrade your plan or remove inactive users. 4) We offer a 7-day grace period to make adjustments before requiring an upgrade.",
+    "category": "limits"
+  },
+  {
+    "id": "P006",
+    "query": "How does the free trial work?",
+    "resolution": "Our 14-day free trial includes: 1) Full access to Professional tier features. 2) No credit card required to start. 3) Up to 10 test users. 4) Full data export if you decide not to continue. At day 12, you'll receive a reminder email. To continue after trial, simply add a payment method in Settings > Billing.",
+    "category": "trial"
+  },
+  {
+    "id": "P007",
+    "query": "Can I get a refund if I'm not satisfied?",
+    "resolution": "We offer a 30-day money-back guarantee for first-time subscribers. To request a refund: 1) Contact billing@company.com within 30 days of your first payment. 2) Provide your account email and reason for cancellation. 3) Refunds are processed within 5-7 business days. Note: This applies to first payment only; subsequent months are non-refundable but you can cancel anytime.",
+    "category": "refunds"
+  },
+  {
+    "id": "P008",
+    "query": "What payment methods do you accept?",
+    "resolution": "We accept the following payment methods: 1) Credit/Debit Cards - Visa, Mastercard, American Express, Discover. 2) ACH Bank Transfer - Available for annual Enterprise plans (US only). 3) Wire Transfer - Available for Enterprise plans over $10,000/year. 4) PayPal - Available in supported regions. To update payment method, go to Settings > Billing > Payment Methods.",
+    "category": "payments"
+  }
+]
+

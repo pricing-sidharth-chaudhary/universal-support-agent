@@ -2,17 +2,10 @@ import { useState, useCallback } from 'react';
 import { sendMessage } from '../services/api';
 
 /**
- * Custom hook for managing chat state and interactions
+ * Custom hook for managing agent-aware chat state
  */
 export function useChat() {
-  const [messages, setMessages] = useState([
-    {
-      id: 'welcome',
-      type: 'assistant',
-      content: "Hello! I'm your AI support assistant. How can I help you today?",
-      timestamp: new Date(),
-    },
-  ]);
+  const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -20,8 +13,8 @@ export function useChat() {
     setMessages((prev) => [...prev, { ...message, id: Date.now().toString() }]);
   }, []);
 
-  const send = useCallback(async (question) => {
-    if (!question.trim()) return;
+  const send = useCallback(async (question, agentId) => {
+    if (!question.trim() || !agentId) return;
 
     // Add user message
     const userMessage = {
@@ -35,7 +28,7 @@ export function useChat() {
     setError(null);
 
     try {
-      const response = await sendMessage(question);
+      const response = await sendMessage(question, agentId);
 
       // Add assistant response
       const assistantMessage = {
@@ -63,12 +56,12 @@ export function useChat() {
     }
   }, [addMessage]);
 
-  const clearChat = useCallback(() => {
+  const clearChat = useCallback((agentName = 'AI assistant') => {
     setMessages([
       {
         id: 'welcome',
         type: 'assistant',
-        content: "Hello! I'm your AI support assistant. How can I help you today?",
+        content: `Hello! I'm your ${agentName}. How can I help you today?`,
         timestamp: new Date(),
       },
     ]);
@@ -83,4 +76,3 @@ export function useChat() {
     clearChat,
   };
 }
-

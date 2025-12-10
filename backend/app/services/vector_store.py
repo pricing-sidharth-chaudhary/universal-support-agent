@@ -1,4 +1,4 @@
-"""ChromaDB Vector Store Service - Local Persistent Storage"""
+"""ChromaDB Vector Store Service - Multi-Collection Support"""
 
 import chromadb
 from chromadb.config import Settings as ChromaSettings
@@ -10,7 +10,7 @@ from app.models.schemas import SupportTicket, RetrievedContext
 
 
 class VectorStoreService:
-    """Service for managing ChromaDB vector store operations"""
+    """Service for managing ChromaDB vector store operations with multiple collections"""
     
     _instance: Optional["VectorStoreService"] = None
     
@@ -29,8 +29,8 @@ class VectorStoreService:
             )
         )
         
-        self.collection_name = settings.chroma_collection_name
-        self._collection = None
+        # Cache for collections
+        self._collections: dict = {}
     
     @classmethod
     def get_instance(cls) -> "VectorStoreService":
@@ -39,26 +39,26 @@ class VectorStoreService:
             cls._instance = cls()
         return cls._instance
     
-    @property
-    def collection(self):
-        """Get or create the collection"""
-        if self._collection is None:
-            self._collection = self.client.get_or_create_collection(
-                name=self.collection_name,
+    def get_collection(self, collection_name: str):
+        """Get or create a collection by name"""
+        if collection_name not in self._collections:
+            self._collections[collection_name] = self.client.get_or_create_collection(
+                name=collection_name,
                 metadata={"hnsw:space": "cosine"}
             )
-        return self._collection
+        return self._collections[collection_name]
     
-    def add_tickets(
-        self, 
+    def add_tickets_to_collection(
+        self,
+        collection_name: str,
         tickets: list[SupportTicket], 
         embeddings: list[list[float]]
     ) -> int:
         """
-        Add support tickets to the vector store.
-        Embeds only the query, stores resolution in metadata.
+        Add support tickets to a specific collection.
         
         Args:
+            collection_name: Name of the ChromaDB collection
             tickets: List of support tickets
             embeddings: Pre-computed embeddings for ticket queries
             
@@ -68,8 +68,10 @@ class VectorStoreService:
         if not tickets:
             return 0
         
+        collection = self.get_collection(collection_name)
+        
         ids = [f"ticket_{t.id}" for t in tickets]
-        documents = [t.query for t in tickets]  # Only embed queries
+        documents = [t.query for t in tickets]
         metadatas = [
             {
                 "ticket_id": t.id,
@@ -79,7 +81,7 @@ class VectorStoreService:
             for t in tickets
         ]
         
-        self.collection.add(
+        collection.add(
             ids=ids,
             documents=documents,
             embeddings=embeddings,
@@ -88,22 +90,26 @@ class VectorStoreService:
         
         return len(tickets)
     
-    def search_similar(
-        self, 
+    def search_similar_in_collection(
+        self,
+        collection_name: str,
         query_embedding: list[float], 
         top_k: int = 3
     ) -> list[RetrievedContext]:
         """
-        Search for similar queries in the vector store.
+        Search for similar queries in a specific collection.
         
         Args:
+            collection_name: Name of the ChromaDB collection
             query_embedding: Embedding of the user's query
             top_k: Number of results to return
             
         Returns:
             List of retrieved contexts with similarity scores
         """
-        results = self.collection.query(
+        collection = self.get_collection(collection_name)
+        
+        results = collection.query(
             query_embeddings=[query_embedding],
             n_results=top_k,
             include=["documents", "metadatas", "distances"]
@@ -114,8 +120,6 @@ class VectorStoreService:
         if results and results["documents"] and results["documents"][0]:
             for i, doc in enumerate(results["documents"][0]):
                 metadata = results["metadatas"][0][i]
-                # ChromaDB returns distance, convert to similarity
-                # For cosine distance: similarity = 1 - distance
                 distance = results["distances"][0][i]
                 similarity = 1 - distance
                 
@@ -129,31 +133,34 @@ class VectorStoreService:
         
         return retrieved
     
-    def clear_collection(self) -> bool:
+    def clear_collection(self, collection_name: str) -> bool:
         """
-        Clear all data from the collection (for reindexing).
+        Clear all data from a specific collection.
         
         Returns:
             True if successful
         """
         try:
-            self.client.delete_collection(self.collection_name)
-            self._collection = None  # Reset cached collection
+            self.client.delete_collection(collection_name)
+            if collection_name in self._collections:
+                del self._collections[collection_name]
             return True
         except Exception:
             return False
     
-    def get_ticket_count(self) -> int:
-        """Get the number of tickets in the collection"""
+    def get_collection_count(self, collection_name: str) -> int:
+        """Get the number of documents in a specific collection"""
         try:
-            return self.collection.count()
+            collection = self.get_collection(collection_name)
+            return collection.count()
         except Exception:
             return 0
     
-    def is_ready(self) -> bool:
-        """Check if the vector store is ready"""
+    def is_collection_ready(self, collection_name: str) -> bool:
+        """Check if a specific collection is ready"""
         try:
-            _ = self.collection.count()
+            collection = self.get_collection(collection_name)
+            _ = collection.count()
             return True
         except Exception:
             return False
@@ -163,4 +170,3 @@ class VectorStoreService:
 def get_vector_store() -> VectorStoreService:
     """FastAPI dependency for vector store"""
     return VectorStoreService.get_instance()
-

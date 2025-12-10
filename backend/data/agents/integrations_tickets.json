@@ -1,0 +1,51 @@
+[
+  {
+    "id": "I001",
+    "query": "How do I get API credentials for integration?",
+    "resolution": "To obtain API credentials: 1) Log into your account as an Admin. 2) Go to Settings > Integrations > API Keys. 3) Click 'Generate New API Key'. 4) Provide a name/description for the key (e.g., 'Salesforce Integration'). 5) Set permissions: Read, Write, or Full Access. 6) Copy the API Key and Secret immediately - the secret is only shown once. 7) Store credentials securely. API base URL: https://api.cortex.bain.com/v2/",
+    "category": "authentication"
+  },
+  {
+    "id": "I002",
+    "query": "How do I set up a webhook for deal updates?",
+    "resolution": "To configure webhooks for deal updates: 1) Go to Settings > Integrations > Webhooks. 2) Click 'Add Webhook'. 3) Enter your endpoint URL (must be HTTPS). 4) Select events: deal.created, deal.updated, deal.deleted. 5) Add optional headers for authentication. 6) Set retry policy: 3 retries with exponential backoff. 7) Test with 'Send Test Payload'. Webhook payloads include: event_type, timestamp, and full record data in JSON format.",
+    "category": "webhooks"
+  },
+  {
+    "id": "I003",
+    "query": "How do I integrate with Slack for notifications?",
+    "resolution": "To set up Slack integration: 1) Go to Settings > Integrations > Apps > Slack. 2) Click 'Connect to Slack' and authorize the app. 3) Select default channel for notifications. 4) Configure notification triggers: New Deals, Won Deals, Tasks Due, Mentions. 5) Customize message format in notification settings. 6) Optionally enable slash commands: /cortex search [query], /cortex create [deal/contact]. The integration syncs user profiles automatically for @mentions.",
+    "category": "slack"
+  },
+  {
+    "id": "I004",
+    "query": "How do I sync data with Microsoft 365?",
+    "resolution": "To configure Microsoft 365 sync: 1) Navigate to Settings > Integrations > Microsoft 365. 2) Sign in with your M365 admin account. 3) Grant permissions for Calendar, Contacts, and Email. 4) Configure sync settings: a) Calendar - bidirectional sync of meetings with Cortex activities. b) Contacts - one-way push from Cortex to Outlook. c) Email - track emails sent to Cortex contacts. 5) Set sync frequency: Real-time or every 15 minutes. Initial sync may take up to 1 hour.",
+    "category": "microsoft"
+  },
+  {
+    "id": "I005",
+    "query": "What's the API rate limit and how do I handle it?",
+    "resolution": "API rate limits are: 1) Standard: 100 requests/minute, 10,000 requests/day. 2) Enterprise: 500 requests/minute, 100,000 requests/day. When rate limited, API returns HTTP 429 with headers: X-RateLimit-Remaining, X-RateLimit-Reset. Best practices: a) Implement exponential backoff. b) Use bulk endpoints for multiple records. c) Cache frequently accessed data. d) Use webhooks instead of polling. To request higher limits, contact api-support@bain.com with your use case.",
+    "category": "api"
+  },
+  {
+    "id": "I006",
+    "query": "How do I troubleshoot failed API requests?",
+    "resolution": "To debug API issues: 1) Check response status codes: 400=Bad Request (check payload), 401=Unauthorized (check API key), 403=Forbidden (check permissions), 404=Not Found (check endpoint/ID), 429=Rate Limited, 500=Server Error. 2) Enable request logging in Settings > API > Logs. 3) Use correlation ID from response headers for support tickets. 4) Test with Postman using our collection: https://api.cortex.bain.com/postman. 5) Check API status at status.cortex.bain.com",
+    "category": "troubleshooting"
+  },
+  {
+    "id": "I007",
+    "query": "How do I set up SSO with Okta?",
+    "resolution": "To configure Okta SSO: 1) In Okta Admin, create new SAML 2.0 application. 2) Use these settings: SSO URL=https://auth.cortex.bain.com/saml/consume, Entity ID=cortex-crm. 3) Map attributes: email→user.email, firstName→user.firstName, lastName→user.lastName. 4) Download Okta metadata XML. 5) In Cortex, go to Settings > Security > SSO > SAML. 6) Upload Okta metadata file. 7) Enable 'Require SSO for all users'. Test with a non-admin user first.",
+    "category": "sso"
+  },
+  {
+    "id": "I008",
+    "query": "How do I use the bulk import API?",
+    "resolution": "To use the bulk import API: 1) Endpoint: POST /api/v2/bulk/import. 2) Prepare CSV or JSON file (max 10MB, 50,000 records). 3) Upload file with multipart/form-data. 4) Specify object type and operation: insert, update, or upsert. 5) Include field mapping in request body. 6) API returns job_id immediately. 7) Poll GET /api/v2/bulk/status/{job_id} for progress. 8) Download results from GET /api/v2/bulk/results/{job_id}. Processing speed: ~1,000 records/minute.",
+    "category": "bulk_operations"
+  }
+]
+

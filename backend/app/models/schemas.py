@@ -12,9 +12,21 @@ class SupportTicket(BaseModel):
     category: Optional[str] = Field(None, description="Ticket category")
 
 
+class AgentConfig(BaseModel):
+    """Schema for agent configuration"""
+    id: str = Field(..., description="Unique agent identifier")
+    name: str = Field(..., description="Display name of the agent")
+    description: str = Field(..., description="Brief description of the agent's expertise")
+    icon: str = Field(..., description="Icon name for the agent")
+    collection_name: str = Field(..., description="ChromaDB collection name")
+    data_source: str = Field(..., description="Path to the agent's data file")
+    system_prompt: str = Field(..., description="System prompt for the agent")
+
+
 class ChatRequest(BaseModel):
     """Request schema for chat endpoint"""
     question: str = Field(..., min_length=1, description="User's question")
+    agent_id: str = Field(..., description="ID of the agent to use")
 
 
 class RetrievedContext(BaseModel):
@@ -56,3 +68,18 @@ class HealthResponse(BaseModel):
     vector_store_ready: bool
     tickets_count: int
 
+
+class AgentStatusResponse(BaseModel):
+    """Response schema for agent status"""
+    id: str
+    name: str
+    description: str
+    icon: str
+    tickets_count: int
+    is_ready: bool
+
+
+class AgentListResponse(BaseModel):
+    """Response schema for listing agents"""
+    agents: list[dict]
+    total: int

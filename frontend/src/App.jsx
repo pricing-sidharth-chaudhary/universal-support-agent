@@ -1,113 +1,88 @@
 import { useState, useEffect } from 'react';
-import { UploadModal } from './components/UploadModal';
-import { ReindexModal } from './components/ReindexModal';
+import { AgentHub } from './components/AgentHub';
 import { ChatWindow } from './components/ChatWindow';
 import { useChat } from './hooks/useChat';
-import { useFileUpload } from './hooks/useFileUpload';
-import { getStatus } from './services/api';
+import { getAgents } from './services/api';
 
 function App() {
-  const [appState, setAppState] = useState('loading'); // 'loading' | 'initial' | 'ready'
-  const [ticketCount, setTicketCount] = useState(0);
-  const [showReindexModal, setShowReindexModal] = useState(false);
+  const [appState, setAppState] = useState('loading'); // 'loading' | 'hub' | 'chat'
+  const [agents, setAgents] = useState([]);
+  const [selectedAgent, setSelectedAgent] = useState(null);
 
-  const { messages, isLoading: isChatLoading, send } = useChat();
-  const uploadHook = useFileUpload();
-  const reindexHook = useFileUpload();
+  const { messages, isLoading: isChatLoading, send, clearChat } = useChat();
 
-  // Check initial status on mount
+  // Load agents on mount
   useEffect(() => {
-    const checkInitialStatus = async () => {
+    const loadAgents = async () => {
       try {
-        const status = await getStatus();
-        if (status && status.tickets_count > 0) {
-          setTicketCount(status.tickets_count);
-          setAppState('ready');
-        } else {
-          setAppState('initial');
-        }
+        const response = await getAgents();
+        setAgents(response.agents || []);
+        setAppState('hub');
       } catch (error) {
-        // Backend might not be running yet
-        setAppState('initial');
+        console.error('Failed to load agents:', error);
+        setAppState('hub');
       }
     };
 
-    checkInitialStatus();
+    loadAgents();
   }, []);
 
-  // Handle initial upload complete
-  const handleUploadComplete = (count) => {
-    setTicketCount(count);
-    setAppState('ready');
+  // Handle agent selection
+  const handleSelectAgent = (agent) => {
+    setSelectedAgent(agent);
+    clearChat(agent.name);
+    setAppState('chat');
   };
 
-  // Handle reindex complete
-  const handleReindexComplete = (count) => {
-    setTicketCount(count);
-    setShowReindexModal(false);
+  // Handle back to hub
+  const handleBackToHub = () => {
+    setSelectedAgent(null);
+    setAppState('hub');
   };
 
-  // Show loading state briefly
+  // Handle send with agent context
+  const handleSend = (question) => {
+    if (selectedAgent) {
+      send(question, selectedAgent.id);
+    }
+  };
+
+  // Loading state
   if (appState === 'loading') {
     return (
-      <div className="min-h-screen dot-pattern flex items-center justify-center">
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <div className="w-12 h-12 border-4 border-primary-500 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-          <p className="text-dark-400">Loading...</p>
+          <div className="w-12 h-12 border-4 border-bain-red border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+          <p className="text-gray-500">Loading agents...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen dot-pattern flex items-center justify-center p-4 sm:p-6 lg:p-8">
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 sm:p-6 lg:p-8">
       {/* Main Container */}
-      <div className="w-full max-w-2xl h-[85vh] max-h-[800px]">
-        <ChatWindow
-          ticketCount={ticketCount}
-          messages={messages}
-          isLoading={isChatLoading}
-          onSend={send}
-          onReindexClick={() => setShowReindexModal(true)}
-          isLocked={appState !== 'ready'}
-        />
-      </div>
-
-      {/* Initial Upload Modal (Blocking) */}
-      <UploadModal
-        isOpen={appState === 'initial'}
-        onUploadComplete={handleUploadComplete}
-        upload={uploadHook.upload}
-        isUploading={uploadHook.isUploading}
-        uploadProgress={uploadHook.uploadProgress}
-        error={uploadHook.error}
-        result={uploadHook.result}
-      />
-
-      {/* Reindex Modal (Non-blocking) */}
-      <ReindexModal
-        isOpen={showReindexModal}
-        onClose={() => {
-          setShowReindexModal(false);
-          reindexHook.reset();
-        }}
-        onReindexComplete={handleReindexComplete}
-        upload={reindexHook.upload}
-        isUploading={reindexHook.isUploading}
-        uploadProgress={reindexHook.uploadProgress}
-        error={reindexHook.error}
-        result={reindexHook.result}
-        reset={reindexHook.reset}
-      />
-
-      {/* Background Decorations */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden -z-10">
-        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-primary-500/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-cyan-500/5 rounded-full blur-3xl" />
+      <div className="w-full max-w-4xl h-[85vh] max-h-[800px]">
+        <div className="h-full rounded-2xl overflow-hidden glass glow-primary">
+          {appState === 'hub' ? (
+            <AgentHub
+              agents={agents}
+              onSelectAgent={handleSelectAgent}
+              isLoading={false}
+            />
+          ) : (
+            <ChatWindow
+              agent={selectedAgent}
+              messages={messages}
+              isLoading={isChatLoading}
+              onSend={handleSend}
+              onBackClick={handleBackToHub}
+            />
+          )}
+        </div>
       </div>
     </div>
   );
 }
 
 export default App;
-

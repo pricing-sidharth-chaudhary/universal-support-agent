@@ -3,22 +3,17 @@ import { MessageList } from './MessageList';
 import { ChatInput } from './ChatInput';
 
 export function ChatWindow({ 
-  ticketCount, 
+  agent,
   messages, 
   isLoading, 
   onSend, 
-  onReindexClick,
-  isLocked 
+  onBackClick
 }) {
   return (
-    <div className={`
-      flex flex-col h-full rounded-2xl overflow-hidden
-      glass transition-all duration-500
-      ${isLocked ? 'opacity-30 blur-sm pointer-events-none' : 'glow-primary'}
-    `}>
+    <div className="flex flex-col h-full">
       <ChatHeader 
-        ticketCount={ticketCount} 
-        onReindexClick={onReindexClick} 
+        agent={agent}
+        onBackClick={onBackClick} 
       />
       
       <MessageList 
@@ -29,9 +24,8 @@ export function ChatWindow({
       <ChatInput 
         onSend={onSend} 
         isLoading={isLoading}
-        disabled={isLocked || ticketCount === 0}
+        placeholder={`Ask ${agent?.name || 'the agent'} a question...`}
       />
     </div>
   );
 }
-
