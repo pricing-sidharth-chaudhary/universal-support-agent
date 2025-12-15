@@ -2,8 +2,8 @@
   "agents": [
     {
       "id": "universal",
-      "name": "Universal Support",
-      "description": "General support agent that identifies your query and routes to the right team",
+      "name": "Universal Support Triaging",
+      "description": "Identifies your query and routes to the right team or provides direct resolution",
       "icon": "Compass",
       "collection_name": "universal_kb",
       "data_source": "data/agents/universal_tickets.json",
