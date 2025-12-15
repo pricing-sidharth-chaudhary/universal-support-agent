@@ -1,10 +1,11 @@
-import { ArrowLeft, Database, DollarSign, Plug } from 'lucide-react';
+import { ArrowLeft, Database, DollarSign, Plug, Compass } from 'lucide-react';
 
 // Icon mapping
 const iconMap = {
   DollarSign: DollarSign,
   Database: Database,
   Plug: Plug,
+  Compass: Compass,
 };
 
 export function ChatHeader({ agent, onBackClick }) {
@@ -31,7 +32,7 @@ export function ChatHeader({ agent, onBackClick }) {
           </h1>
           <div className="flex items-center gap-2 text-xs text-gray-500">
             <Database className="w-3 h-3" />
-            <span>{agent?.tickets_count || 0} tickets indexed</span>
+            <span>{agent?.tickets_count || 0} topics indexed</span>
           </div>
         </div>
       </div>

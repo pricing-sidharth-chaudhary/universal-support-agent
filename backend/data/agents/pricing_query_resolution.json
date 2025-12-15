@@ -1,0 +1,158 @@
+[
+  {
+    "id": "P001",
+    "query": "Not able to access pricing configurator",
+    "resolution": "Please refer to the Presentaion to request access<Pricing Request Access> to Pricing Cofigurator Tool",
+    "category": "pricing"
+  },
+  {
+    "id": "P002",
+    "query": "Grant access to Pricing configurator",
+    "resolution": "Please refer to the Presentaion to request access<Pricing Request Access> to Pricing Cofigurator Tool",
+    "category": "pricing"
+  },
+  {
+    "id": "P003",
+    "query": "Please provide access to pricing configurate",
+    "resolution": "Please refer to the Presentaion to request access<Pricing Request Access> to Pricing Cofigurator Tool",
+    "category": "pricing"
+  },
+  {
+    "id": "P004",
+    "query": "Pricing Configurator Access Request",
+    "resolution": "Please refer to the Presentaion to request access<Pricing Request Access> to Pricing Cofigurator Tool",
+    "category": "pricing"
+  },
+  {
+    "id": "P005",
+    "query": "Missing client in pricing configurator",
+    "resolution": "Resolution steps:\n- Create an opportunity in Cortex for the <Client Name> account.\n- Follow the steps to navigate to the 'Resources & Pricing' tab in the Cortex opportunity when it reaches the 'Mobilizing to Propose' or 'Closing' stage.\n- Click 'create pricing proposal' to automatically send the client to the pricing configurator.\n- In the configurator, add resources to the pricing quote, save, and click 'Updated Cortex'.\n- In Cortex, click for approval and either self-approve or send for approval.",
+    "category": "pricing"
+  },
+  {
+    "id": "P006",
+    "query": "Not able to find client in pricing configurator",
+    "resolution": "Resolution steps: - Create an opportunity in Cortex for the <client name> account. - Follow the steps to navigate to the 'Resources & Pricing' tab in the Cortex opportunity when it reaches the 'Mobilizing to Propose' or 'Closing' stage. - Click 'create pricing proposal' to automatically send the client to the pricing configurator. - In the configurator, add resources to the pricing quote, save, and click 'Updated Cortex'. - In Cortex, click for approval and either self-approve or send for approval.",
+    "category": "pricing"
+  },
+  {
+    "id": "P007",
+    "query": "Please unlink cortex-pricing opportunity",
+    "resolution": "Review the pricing scenario data for the opportunity (Account ID: 001QB00000ZCM3pYAH) and confirm that the information appears valid, as previously verified by the pricing team.\nOpen and review the Cortex configurator link (https://bain4.lightning.force.com/lightning/r/Opportunity/006QB00000StVKnYAN/view\n) and the pricing scenario link (https://pricing.bain.com/opportunities/dc8ebfa0-bf9c-4828-bf9b-d3375306a588\n) to confirm there are no issues that require action.",
+    "category": "pricing"
+  },
+  {
+    "id": "P008",
+    "query": "Please fix linking",
+    "resolution": "Review the pricing scenario data for the opportunity (Account ID: 001QB00000ZCM3pYAH) and confirm that the information appears valid, as previously verified by the pricing team.\nOpen and review the Cortex configurator link (https://bain4.lightning.force.com/lightning/r/Opportunity/006QB00000StVKnYAN/view\n) and the pricing scenario link (https://pricing.bain.com/opportunities/dc8ebfa0-bf9c-4828-bf9b-d3375306a588\n) to confirm there are no issues that require action.",
+    "category": "pricing"
+  },
+  {
+    "id": "P009",
+    "query": "please link to correct opportunity",
+    "resolution": "Review the pricing scenario data for the opportunity (Account ID: 001QB00000ZCM3pYAH) and confirm that the information appears valid, as previously verified by the pricing team.\nOpen and review the Cortex configurator link (https://bain4.lightning.force.com/lightning/r/Opportunity/006QB00000StVKnYAN/view\n) and the pricing scenario link (https://pricing.bain.com/opportunities/dc8ebfa0-bf9c-4828-bf9b-d3375306a588\n) to confirm there are no issues that require action.",
+    "category": "pricing"
+  },
+  {
+    "id": "P010",
+    "query": "Partner Error when Accessing a PC linked in Cortex",
+    "resolution": "Please refer to this slide <slide-link> the access PC Linked opportunity",
+    "category": "pricing"
+  },
+  {
+    "id": "P011",
+    "query": "Error accessing opportunity ",
+    "resolution": "Please refer to this slide <slide-link> the access PC Linked opportunity",
+    "category": "pricing"
+  },
+  {
+    "id": "P012",
+    "query": "Not able to Add teamlet to my opportunity",
+    "resolution": "Verified that the user had the required Salesforce access and opportunity edit permissions.\n\nConfirmed that the Opportunity was in a stage where teamlet additions are allowed. Opportunities in certain closed or restricted stages may prevent updates.\n\nChecked that the Teamlet feature was enabled for the user\u2019s office/region and that the opportunity record type supported teamlet assignment.\n\nCleared browser cache and had the user refresh the Cortex session to rule out UI caching issues.\n\nGuided the user to add the teamlet via Opportunity \u2192 Related Tab \u2192 Teamlet section \u2192 New, which resolved the issue.\n\nAfter completing these steps, the user was successfully able to add the teamlet.",
+    "category": "pricing"
+  },
+  {
+    "id": "P013",
+    "query": "Not able to add a resource to my opportunity ",
+    "resolution": "Resolution:\n\nConfirmed that the user had the appropriate Cortex permissions to edit the Opportunity and manage resource assignments.\n\nVerified that the Opportunity was in an editable stage and not locked due to workflow restrictions, approvals, or closed status.\n\nChecked that the required fields on the Opportunity (e.g., staffing region, dates, role type) were completed, as missing mandatory fields can prevent resource addition.\n\nEnsured that the resource being added was active in the staffing system and available for assignment during the specified project dates.\n\nAdvised the user to attempt adding the resource through Opportunity \u2192 Related Tab \u2192 Resources \u2192 Add Resource, which succeeded after refreshing the session.\n\nAfter these validations, the user was able to add the resource successfully.",
+    "category": "pricing"
+  },
+  {
+    "id": "P014",
+    "query": "OH not getting approve access",
+    "resolution": "Confirm that your Salesforce/Cortex role is correct and includes the necessary approval permissions for your office.\n\nVerify that you are mapped as the approver in the appropriate workflow for the office and opportunity type.\n\nIf the approval role or workflow mapping appears incorrect, request an update from your system admin or support team.\n\nLog out and log back into Salesforce/Cortex after the permissions or workflow mapping are updated so the changes take effect.\n\nRecheck the Approvals section to confirm you can now view and take action on pending approval items.",
+    "category": "pricing"
+  },
+  {
+    "id": "P015",
+    "query": "OH not able to approve the case",
+    "resolution": "Confirm that your Salesforce/Cortex role is correct and includes the necessary approval permissions for your office.\n\nVerify that you are mapped as the approver in the appropriate workflow for the office and opportunity type.\n\nIf the approval role or workflow mapping appears incorrect, request an update from your system admin or support team.\n\nLog out and log back into Salesforce/Cortex after the permissions or workflow mapping are updated so the changes take effect.\n\nRecheck the Approvals section to confirm you can now view and take action on pending approval items.",
+    "category": "pricing"
+  },
+  {
+    "id": "P016",
+    "query": "OH not able to approve the opportuntiy",
+    "resolution": "Confirm that your Salesforce/Cortex role is correct and includes the necessary approval permissions for your office.\n\nVerify that you are mapped as the approver in the appropriate workflow for the office and opportunity type.\n\nIf the approval role or workflow mapping appears incorrect, request an update from your system admin or support team.\n\nLog out and log back into Salesforce/Cortex after the permissions or workflow mapping are updated so the changes take effect.\n\nRecheck the Approvals section to confirm you can now view and take action on pending approval items.",
+    "category": "pricing"
+  },
+  {
+    "id": "P017",
+    "query": "Getting incorrect rates for a resource ",
+    "resolution": "Please click on Update Rates to update the rates for the resource",
+    "category": "pricing"
+  },
+  {
+    "id": "P018",
+    "query": "Office Head not getting approve access",
+    "resolution": "Confirm that your Salesforce/Cortex role is correct and includes the necessary approval permissions for your office.\n\nVerify that you are mapped as the approver in the appropriate workflow for the office and opportunity type.\n\nIf the approval role or workflow mapping appears incorrect, request an update from your system admin or support team.\n\nLog out and log back into Salesforce/Cortex after the permissions or workflow mapping are updated so the changes take effect.\n\nRecheck the Approvals section to confirm you can now view and take action on pending approval items.",
+    "category": "pricing"
+  },
+  {
+    "id": "P019",
+    "query": "OH not able to approve the opportuntiy",
+    "resolution": "Confirm that your Salesforce/Cortex role is correct and includes the necessary approval permissions for your office.",
+    "category": "pricing"
+  },
+  {
+    "id": "P021",
+    "query": "Office Head not getting approve access",
+    "resolution": "Verify that you are mapped as the approver in the appropriate workflow for the office and opportunity type.",
+    "category": "pricing"
+  },
+  {
+    "id": "P023",
+    "query": "OH not able to approve the opportuntiy",
+    "resolution": "If the approval role or workflow mapping appears incorrect, request an update from your system admin or support team.",
+    "category": "pricing"
+  },
+  {
+    "id": "P027",
+    "query": "OH not able to approve the opportuntiy",
+    "resolution": "Recheck the Approvals section to confirm you can now view and take action on pending approval items.",
+    "category": "pricing"
+  },
+  {
+    "id": "P028",
+    "query": "Update Opportuntiy Name for this oppty",
+    "resolution": "Click this link to update Opportunity Name (Tool calling)",
+    "category": "pricing"
+  },
+  {
+    "id": "P029",
+    "query": "Please help me update Client Name for this oppty",
+    "resolution": "Click this link to update Client Name (Tool Calling)",
+    "category": "pricing"
+  },
+  {
+    "id": "P030",
+    "query": "Please change industry for this Opportunity",
+    "resolution": "Click on this link to update industry for this opportunity (Tool Calling)",
+    "category": "pricing"
+  },
+  {
+    "id": "P031",
+    "query": "Please update capability for this opportunity ",
+    "resolution": "Click on this link to update the capability for this opportunity (Tool Calling)",
+    "category": "pricing"
+  }
+]

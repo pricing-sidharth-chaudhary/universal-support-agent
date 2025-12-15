@@ -2,50 +2,283 @@
   {
     "id": "C001",
     "query": "How do I set up a new Cortex CRM instance?",
-    "resolution": "To set up a new Cortex CRM instance: 1) Log into the Bain Admin Portal at admin.bain.com. 2) Navigate to Applications > Cortex > New Instance. 3) Select your region (US-East, EU-West, or APAC). 4) Configure initial settings: company name, admin email, timezone. 5) Click 'Provision Instance' - setup takes approximately 15-20 minutes. 6) You'll receive an email with login credentials and onboarding guide.",
+    "resolution": "To set up a new Cortex CRM instance:\n\n1. Log into the Bain Admin Portal at admin.bain.com\n2. Navigate to Applications > Cortex > New Instance\n3. Select your region (US-East, EU-West, or APAC)\n4. Configure initial settings: company name, admin email, timezone\n5. Click 'Provision Instance' - setup takes approximately 15-20 minutes\n6. You'll receive an email with login credentials and onboarding guide\n\n[ACTION_LINK:Open Admin Portal|https://admin.bain.com/cortex/new]",
+    "category": "setup"
+  },
+  {
+    "id": "C001a",
+    "query": "Create new Cortex instance",
+    "resolution": "To set up a new Cortex CRM instance:\n\n1. Log into the Bain Admin Portal at admin.bain.com\n2. Navigate to Applications > Cortex > New Instance\n3. Select your region (US-East, EU-West, or APAC)\n4. Configure initial settings: company name, admin email, timezone\n5. Click 'Provision Instance' - setup takes approximately 15-20 minutes\n6. You'll receive an email with login credentials and onboarding guide\n\n[ACTION_LINK:Open Admin Portal|https://admin.bain.com/cortex/new]",
+    "category": "setup"
+  },
+  {
+    "id": "C001b",
+    "query": "Need a new Cortex environment",
+    "resolution": "To set up a new Cortex CRM instance:\n\n1. Log into the Bain Admin Portal at admin.bain.com\n2. Navigate to Applications > Cortex > New Instance\n3. Select your region (US-East, EU-West, or APAC)\n4. Configure initial settings: company name, admin email, timezone\n5. Click 'Provision Instance' - setup takes approximately 15-20 minutes\n6. You'll receive an email with login credentials and onboarding guide\n\n[ACTION_LINK:Open Admin Portal|https://admin.bain.com/cortex/new]",
     "category": "setup"
   },
   {
     "id": "C002",
     "query": "How do I migrate data from Salesforce to Cortex?",
-    "resolution": "To migrate from Salesforce to Cortex: 1) In Cortex, go to Settings > Data > Import. 2) Select 'Salesforce Migration Wizard'. 3) Authenticate with your Salesforce admin credentials. 4) Map fields: Accounts→Companies, Contacts→People, Opportunities→Deals. 5) Choose migration mode: Full or Incremental. 6) Schedule migration during off-peak hours. 7) Review the migration report for any field mapping issues. Typical migration takes 2-4 hours for 100K records.",
+    "resolution": "To migrate from Salesforce to Cortex:\n\n1. In Cortex, go to Settings > Data > Import\n2. Select 'Salesforce Migration Wizard'\n3. Authenticate with your Salesforce admin credentials\n4. Map fields: Accounts→Companies, Contacts→People, Opportunities→Deals\n5. Choose migration mode: Full or Incremental\n6. Schedule migration during off-peak hours\n7. Review the migration report for any field mapping issues\n\nTypical migration takes 2-4 hours for 100K records.\n\n[ACTION_LINK:Start Migration Wizard|https://bain4.lightning.force.com/cortex/migration|TOOL_CALL:startSalesforceMigration]",
+    "category": "migration"
+  },
+  {
+    "id": "C002a",
+    "query": "Salesforce to Cortex migration",
+    "resolution": "To migrate from Salesforce to Cortex:\n\n1. In Cortex, go to Settings > Data > Import\n2. Select 'Salesforce Migration Wizard'\n3. Authenticate with your Salesforce admin credentials\n4. Map fields: Accounts→Companies, Contacts→People, Opportunities→Deals\n5. Choose migration mode: Full or Incremental\n6. Schedule migration during off-peak hours\n7. Review the migration report for any field mapping issues\n\nTypical migration takes 2-4 hours for 100K records.\n\n[ACTION_LINK:Start Migration Wizard|https://bain4.lightning.force.com/cortex/migration|TOOL_CALL:startSalesforceMigration]",
+    "category": "migration"
+  },
+  {
+    "id": "C002b",
+    "query": "Import data from Salesforce",
+    "resolution": "To migrate from Salesforce to Cortex:\n\n1. In Cortex, go to Settings > Data > Import\n2. Select 'Salesforce Migration Wizard'\n3. Authenticate with your Salesforce admin credentials\n4. Map fields: Accounts→Companies, Contacts→People, Opportunities→Deals\n5. Choose migration mode: Full or Incremental\n6. Schedule migration during off-peak hours\n7. Review the migration report for any field mapping issues\n\nTypical migration takes 2-4 hours for 100K records.\n\n[ACTION_LINK:Start Migration Wizard|https://bain4.lightning.force.com/cortex/migration|TOOL_CALL:startSalesforceMigration]",
+    "category": "migration"
+  },
+  {
+    "id": "C002c",
+    "query": "Move Salesforce data to Cortex",
+    "resolution": "To migrate from Salesforce to Cortex:\n\n1. In Cortex, go to Settings > Data > Import\n2. Select 'Salesforce Migration Wizard'\n3. Authenticate with your Salesforce admin credentials\n4. Map fields: Accounts→Companies, Contacts→People, Opportunities→Deals\n5. Choose migration mode: Full or Incremental\n6. Schedule migration during off-peak hours\n7. Review the migration report for any field mapping issues\n\nTypical migration takes 2-4 hours for 100K records.\n\n[ACTION_LINK:Start Migration Wizard|https://bain4.lightning.force.com/cortex/migration|TOOL_CALL:startSalesforceMigration]",
     "category": "migration"
   },
   {
     "id": "C003",
     "query": "How do I create custom fields in Cortex?",
-    "resolution": "To create custom fields in Cortex: 1) Go to Settings > Customization > Fields. 2) Select the object (Company, Contact, Deal, etc.). 3) Click 'Add Field' and choose field type: Text, Number, Date, Dropdown, Multi-select, or Lookup. 4) Configure field properties: name, API name, required, default value. 5) Set field-level security for different user roles. 6) Click 'Save & Deploy'. Custom fields are immediately available in forms and reports.",
+    "resolution": "To create custom fields in Cortex:\n\n1. Go to Settings > Customization > Fields\n2. Select the object (Company, Contact, Deal, etc.)\n3. Click 'Add Field' and choose field type: Text, Number, Date, Dropdown, Multi-select, or Lookup\n4. Configure field properties: name, API name, required, default value\n5. Set field-level security for different user roles\n6. Click 'Save & Deploy'\n\nCustom fields are immediately available in forms and reports.\n\n[ACTION_LINK:Open Field Manager|https://bain4.lightning.force.com/cortex/settings/fields|TOOL_CALL:openFieldManager]",
+    "category": "customization"
+  },
+  {
+    "id": "C003a",
+    "query": "Add custom field to Cortex",
+    "resolution": "To create custom fields in Cortex:\n\n1. Go to Settings > Customization > Fields\n2. Select the object (Company, Contact, Deal, etc.)\n3. Click 'Add Field' and choose field type: Text, Number, Date, Dropdown, Multi-select, or Lookup\n4. Configure field properties: name, API name, required, default value\n5. Set field-level security for different user roles\n6. Click 'Save & Deploy'\n\nCustom fields are immediately available in forms and reports.\n\n[ACTION_LINK:Open Field Manager|https://bain4.lightning.force.com/cortex/settings/fields|TOOL_CALL:openFieldManager]",
+    "category": "customization"
+  },
+  {
+    "id": "C003b",
+    "query": "Create new field in Cortex",
+    "resolution": "To create custom fields in Cortex:\n\n1. Go to Settings > Customization > Fields\n2. Select the object (Company, Contact, Deal, etc.)\n3. Click 'Add Field' and choose field type: Text, Number, Date, Dropdown, Multi-select, or Lookup\n4. Configure field properties: name, API name, required, default value\n5. Set field-level security for different user roles\n6. Click 'Save & Deploy'\n\nCustom fields are immediately available in forms and reports.\n\n[ACTION_LINK:Open Field Manager|https://bain4.lightning.force.com/cortex/settings/fields|TOOL_CALL:openFieldManager]",
     "category": "customization"
   },
   {
     "id": "C004",
     "query": "How do I set up user roles and permissions in Cortex?",
-    "resolution": "To configure roles and permissions: 1) Navigate to Settings > Users > Roles. 2) Create roles: Admin, Manager, Sales Rep, Read-Only (or customize). 3) For each role, set permissions: Create, Read, Update, Delete per object. 4) Configure record visibility: Own Records, Team Records, All Records. 5) Set up sharing rules for cross-team access. 6) Assign roles to users in Settings > Users > User List. Changes apply immediately upon save.",
+    "resolution": "To configure roles and permissions:\n\n1. Navigate to Settings > Users > Roles\n2. Create roles: Admin, Manager, Sales Rep, Read-Only (or customize)\n3. For each role, set permissions: Create, Read, Update, Delete per object\n4. Configure record visibility: Own Records, Team Records, All Records\n5. Set up sharing rules for cross-team access\n6. Assign roles to users in Settings > Users > User List\n\nChanges apply immediately upon save.\n\n[ACTION_LINK:Open Role Manager|https://bain4.lightning.force.com/cortex/settings/roles|TOOL_CALL:openRoleManager]",
+    "category": "user_management"
+  },
+  {
+    "id": "C004a",
+    "query": "Configure user permissions in Cortex",
+    "resolution": "To configure roles and permissions:\n\n1. Navigate to Settings > Users > Roles\n2. Create roles: Admin, Manager, Sales Rep, Read-Only (or customize)\n3. For each role, set permissions: Create, Read, Update, Delete per object\n4. Configure record visibility: Own Records, Team Records, All Records\n5. Set up sharing rules for cross-team access\n6. Assign roles to users in Settings > Users > User List\n\nChanges apply immediately upon save.\n\n[ACTION_LINK:Open Role Manager|https://bain4.lightning.force.com/cortex/settings/roles|TOOL_CALL:openRoleManager]",
+    "category": "user_management"
+  },
+  {
+    "id": "C004b",
+    "query": "Manage Cortex user access",
+    "resolution": "To configure roles and permissions:\n\n1. Navigate to Settings > Users > Roles\n2. Create roles: Admin, Manager, Sales Rep, Read-Only (or customize)\n3. For each role, set permissions: Create, Read, Update, Delete per object\n4. Configure record visibility: Own Records, Team Records, All Records\n5. Set up sharing rules for cross-team access\n6. Assign roles to users in Settings > Users > User List\n\nChanges apply immediately upon save.\n\n[ACTION_LINK:Open Role Manager|https://bain4.lightning.force.com/cortex/settings/roles|TOOL_CALL:openRoleManager]",
+    "category": "user_management"
+  },
+  {
+    "id": "C004c",
+    "query": "Set up Cortex roles",
+    "resolution": "To configure roles and permissions:\n\n1. Navigate to Settings > Users > Roles\n2. Create roles: Admin, Manager, Sales Rep, Read-Only (or customize)\n3. For each role, set permissions: Create, Read, Update, Delete per object\n4. Configure record visibility: Own Records, Team Records, All Records\n5. Set up sharing rules for cross-team access\n6. Assign roles to users in Settings > Users > User List\n\nChanges apply immediately upon save.\n\n[ACTION_LINK:Open Role Manager|https://bain4.lightning.force.com/cortex/settings/roles|TOOL_CALL:openRoleManager]",
     "category": "user_management"
   },
   {
     "id": "C005",
     "query": "How do I build reports and dashboards in Cortex?",
-    "resolution": "To create reports and dashboards: 1) Go to Analytics > Reports > New Report. 2) Select report type: Tabular, Summary, Matrix, or Joined. 3) Choose primary object and add related objects. 4) Add fields to columns, apply filters and groupings. 5) Save report to a folder. For dashboards: Go to Analytics > Dashboards > New. 6) Add components: charts, tables, metrics, gauges. 7) Link each component to a saved report. 8) Set refresh schedule: Real-time, Hourly, or Daily.",
+    "resolution": "To create reports and dashboards:\n\n1. Go to Analytics > Reports > New Report\n2. Select report type: Tabular, Summary, Matrix, or Joined\n3. Choose primary object and add related objects\n4. Add fields to columns, apply filters and groupings\n5. Save report to a folder\n\nFor dashboards:\n6. Go to Analytics > Dashboards > New\n7. Add components: charts, tables, metrics, gauges\n8. Link each component to a saved report\n9. Set refresh schedule: Real-time, Hourly, or Daily\n\n[ACTION_LINK:Create New Report|https://bain4.lightning.force.com/cortex/analytics/reports/new|TOOL_CALL:createReport]\n[ACTION_LINK:Create Dashboard|https://bain4.lightning.force.com/cortex/analytics/dashboards/new|TOOL_CALL:createDashboard]",
+    "category": "analytics"
+  },
+  {
+    "id": "C005a",
+    "query": "Create Cortex report",
+    "resolution": "To create reports and dashboards:\n\n1. Go to Analytics > Reports > New Report\n2. Select report type: Tabular, Summary, Matrix, or Joined\n3. Choose primary object and add related objects\n4. Add fields to columns, apply filters and groupings\n5. Save report to a folder\n\nFor dashboards:\n6. Go to Analytics > Dashboards > New\n7. Add components: charts, tables, metrics, gauges\n8. Link each component to a saved report\n9. Set refresh schedule: Real-time, Hourly, or Daily\n\n[ACTION_LINK:Create New Report|https://bain4.lightning.force.com/cortex/analytics/reports/new|TOOL_CALL:createReport]\n[ACTION_LINK:Create Dashboard|https://bain4.lightning.force.com/cortex/analytics/dashboards/new|TOOL_CALL:createDashboard]",
+    "category": "analytics"
+  },
+  {
+    "id": "C005b",
+    "query": "Build dashboard in Cortex",
+    "resolution": "To create reports and dashboards:\n\n1. Go to Analytics > Reports > New Report\n2. Select report type: Tabular, Summary, Matrix, or Joined\n3. Choose primary object and add related objects\n4. Add fields to columns, apply filters and groupings\n5. Save report to a folder\n\nFor dashboards:\n6. Go to Analytics > Dashboards > New\n7. Add components: charts, tables, metrics, gauges\n8. Link each component to a saved report\n9. Set refresh schedule: Real-time, Hourly, or Daily\n\n[ACTION_LINK:Create New Report|https://bain4.lightning.force.com/cortex/analytics/reports/new|TOOL_CALL:createReport]\n[ACTION_LINK:Create Dashboard|https://bain4.lightning.force.com/cortex/analytics/dashboards/new|TOOL_CALL:createDashboard]",
+    "category": "analytics"
+  },
+  {
+    "id": "C005c",
+    "query": "Cortex analytics setup",
+    "resolution": "To create reports and dashboards:\n\n1. Go to Analytics > Reports > New Report\n2. Select report type: Tabular, Summary, Matrix, or Joined\n3. Choose primary object and add related objects\n4. Add fields to columns, apply filters and groupings\n5. Save report to a folder\n\nFor dashboards:\n6. Go to Analytics > Dashboards > New\n7. Add components: charts, tables, metrics, gauges\n8. Link each component to a saved report\n9. Set refresh schedule: Real-time, Hourly, or Daily\n\n[ACTION_LINK:Create New Report|https://bain4.lightning.force.com/cortex/analytics/reports/new|TOOL_CALL:createReport]\n[ACTION_LINK:Create Dashboard|https://bain4.lightning.force.com/cortex/analytics/dashboards/new|TOOL_CALL:createDashboard]",
     "category": "analytics"
   },
   {
     "id": "C006",
     "query": "How do I configure email templates in Cortex?",
-    "resolution": "To set up email templates: 1) Go to Communications > Email Templates. 2) Click 'New Template' and select type: Sales, Marketing, or Notification. 3) Use the drag-and-drop editor or HTML mode. 4) Insert merge fields using {{Contact.FirstName}}, {{Deal.Amount}} syntax. 5) Add attachments or dynamic content blocks. 6) Test template with 'Send Test Email'. 7) Set template visibility: Personal, Team, or Organization. Templates can be used in manual emails, workflows, and sequences.",
+    "resolution": "To set up email templates:\n\n1. Go to Communications > Email Templates\n2. Click 'New Template' and select type: Sales, Marketing, or Notification\n3. Use the drag-and-drop editor or HTML mode\n4. Insert merge fields using {{Contact.FirstName}}, {{Deal.Amount}} syntax\n5. Add attachments or dynamic content blocks\n6. Test template with 'Send Test Email'\n7. Set template visibility: Personal, Team, or Organization\n\nTemplates can be used in manual emails, workflows, and sequences.\n\n[ACTION_LINK:Create Email Template|https://bain4.lightning.force.com/cortex/email/templates/new|TOOL_CALL:createEmailTemplate]",
+    "category": "email"
+  },
+  {
+    "id": "C006a",
+    "query": "Create email template in Cortex",
+    "resolution": "To set up email templates:\n\n1. Go to Communications > Email Templates\n2. Click 'New Template' and select type: Sales, Marketing, or Notification\n3. Use the drag-and-drop editor or HTML mode\n4. Insert merge fields using {{Contact.FirstName}}, {{Deal.Amount}} syntax\n5. Add attachments or dynamic content blocks\n6. Test template with 'Send Test Email'\n7. Set template visibility: Personal, Team, or Organization\n\nTemplates can be used in manual emails, workflows, and sequences.\n\n[ACTION_LINK:Create Email Template|https://bain4.lightning.force.com/cortex/email/templates/new|TOOL_CALL:createEmailTemplate]",
+    "category": "email"
+  },
+  {
+    "id": "C006b",
+    "query": "Set up Cortex email templates",
+    "resolution": "To set up email templates:\n\n1. Go to Communications > Email Templates\n2. Click 'New Template' and select type: Sales, Marketing, or Notification\n3. Use the drag-and-drop editor or HTML mode\n4. Insert merge fields using {{Contact.FirstName}}, {{Deal.Amount}} syntax\n5. Add attachments or dynamic content blocks\n6. Test template with 'Send Test Email'\n7. Set template visibility: Personal, Team, or Organization\n\nTemplates can be used in manual emails, workflows, and sequences.\n\n[ACTION_LINK:Create Email Template|https://bain4.lightning.force.com/cortex/email/templates/new|TOOL_CALL:createEmailTemplate]",
     "category": "email"
   },
   {
     "id": "C007",
     "query": "How do I set up workflow automation in Cortex?",
-    "resolution": "To create workflow automations: 1) Navigate to Automation > Workflows > New. 2) Select trigger: Record Created, Record Updated, Time-Based, or Manual. 3) Define trigger conditions (e.g., Deal Stage = 'Won'). 4) Add actions: Update Field, Send Email, Create Task, Notify User, Call Webhook. 5) Set execution order and add conditional branches if needed. 6) Test workflow with sample records. 7) Activate workflow. Monitor execution in Automation > Workflow Logs.",
+    "resolution": "To create workflow automations:\n\n1. Navigate to Automation > Workflows > New\n2. Select trigger: Record Created, Record Updated, Time-Based, or Manual\n3. Define trigger conditions (e.g., Deal Stage = 'Won')\n4. Add actions: Update Field, Send Email, Create Task, Notify User, Call Webhook\n5. Set execution order and add conditional branches if needed\n6. Test workflow with sample records\n7. Activate workflow\n\nMonitor execution in Automation > Workflow Logs.\n\n[ACTION_LINK:Create Workflow|https://bain4.lightning.force.com/cortex/automation/workflows/new|TOOL_CALL:createWorkflow]",
+    "category": "automation"
+  },
+  {
+    "id": "C007a",
+    "query": "Create Cortex automation",
+    "resolution": "To create workflow automations:\n\n1. Navigate to Automation > Workflows > New\n2. Select trigger: Record Created, Record Updated, Time-Based, or Manual\n3. Define trigger conditions (e.g., Deal Stage = 'Won')\n4. Add actions: Update Field, Send Email, Create Task, Notify User, Call Webhook\n5. Set execution order and add conditional branches if needed\n6. Test workflow with sample records\n7. Activate workflow\n\nMonitor execution in Automation > Workflow Logs.\n\n[ACTION_LINK:Create Workflow|https://bain4.lightning.force.com/cortex/automation/workflows/new|TOOL_CALL:createWorkflow]",
+    "category": "automation"
+  },
+  {
+    "id": "C007b",
+    "query": "Automate process in Cortex",
+    "resolution": "To create workflow automations:\n\n1. Navigate to Automation > Workflows > New\n2. Select trigger: Record Created, Record Updated, Time-Based, or Manual\n3. Define trigger conditions (e.g., Deal Stage = 'Won')\n4. Add actions: Update Field, Send Email, Create Task, Notify User, Call Webhook\n5. Set execution order and add conditional branches if needed\n6. Test workflow with sample records\n7. Activate workflow\n\nMonitor execution in Automation > Workflow Logs.\n\n[ACTION_LINK:Create Workflow|https://bain4.lightning.force.com/cortex/automation/workflows/new|TOOL_CALL:createWorkflow]",
+    "category": "automation"
+  },
+  {
+    "id": "C007c",
+    "query": "Set up Cortex workflow",
+    "resolution": "To create workflow automations:\n\n1. Navigate to Automation > Workflows > New\n2. Select trigger: Record Created, Record Updated, Time-Based, or Manual\n3. Define trigger conditions (e.g., Deal Stage = 'Won')\n4. Add actions: Update Field, Send Email, Create Task, Notify User, Call Webhook\n5. Set execution order and add conditional branches if needed\n6. Test workflow with sample records\n7. Activate workflow\n\nMonitor execution in Automation > Workflow Logs.\n\n[ACTION_LINK:Create Workflow|https://bain4.lightning.force.com/cortex/automation/workflows/new|TOOL_CALL:createWorkflow]",
     "category": "automation"
   },
   {
     "id": "C008",
     "query": "How do I troubleshoot Cortex sync issues?",
-    "resolution": "To troubleshoot sync issues: 1) Check sync status in Settings > Integrations > Sync Status. 2) Review error logs for specific failure messages. 3) Common issues: a) Field mapping mismatch - verify field types match. b) Permission errors - ensure integration user has proper access. c) Rate limits - check API usage in Settings > API > Usage. 4) For immediate fix, try 'Force Resync' on affected records. 5) If issues persist, export sync logs and contact support@bain.com with job ID.",
+    "resolution": "To troubleshoot sync issues:\n\n1. Check sync status in Settings > Integrations > Sync Status\n2. Review error logs for specific failure messages\n3. Common issues:\n   a) Field mapping mismatch - verify field types match\n   b) Permission errors - ensure integration user has proper access\n   c) Rate limits - check API usage in Settings > API > Usage\n4. For immediate fix, try 'Force Resync' on affected records\n5. If issues persist, export sync logs and contact support@bain.com with job ID\n\n[ACTION_LINK:View Sync Status|https://bain4.lightning.force.com/cortex/settings/sync]\n[ACTION_LINK:Force Resync|https://bain4.lightning.force.com/cortex/sync/force|TOOL_CALL:forceCortexResync]",
     "category": "troubleshooting"
+  },
+  {
+    "id": "C008a",
+    "query": "Cortex sync not working",
+    "resolution": "To troubleshoot sync issues:\n\n1. Check sync status in Settings > Integrations > Sync Status\n2. Review error logs for specific failure messages\n3. Common issues:\n   a) Field mapping mismatch - verify field types match\n   b) Permission errors - ensure integration user has proper access\n   c) Rate limits - check API usage in Settings > API > Usage\n4. For immediate fix, try 'Force Resync' on affected records\n5. If issues persist, export sync logs and contact support@bain.com with job ID\n\n[ACTION_LINK:View Sync Status|https://bain4.lightning.force.com/cortex/settings/sync]\n[ACTION_LINK:Force Resync|https://bain4.lightning.force.com/cortex/sync/force|TOOL_CALL:forceCortexResync]",
+    "category": "troubleshooting"
+  },
+  {
+    "id": "C008b",
+    "query": "Data not syncing in Cortex",
+    "resolution": "To troubleshoot sync issues:\n\n1. Check sync status in Settings > Integrations > Sync Status\n2. Review error logs for specific failure messages\n3. Common issues:\n   a) Field mapping mismatch - verify field types match\n   b) Permission errors - ensure integration user has proper access\n   c) Rate limits - check API usage in Settings > API > Usage\n4. For immediate fix, try 'Force Resync' on affected records\n5. If issues persist, export sync logs and contact support@bain.com with job ID\n\n[ACTION_LINK:View Sync Status|https://bain4.lightning.force.com/cortex/settings/sync]\n[ACTION_LINK:Force Resync|https://bain4.lightning.force.com/cortex/sync/force|TOOL_CALL:forceCortexResync]",
+    "category": "troubleshooting"
+  },
+  {
+    "id": "C008c",
+    "query": "Fix Cortex synchronization error",
+    "resolution": "To troubleshoot sync issues:\n\n1. Check sync status in Settings > Integrations > Sync Status\n2. Review error logs for specific failure messages\n3. Common issues:\n   a) Field mapping mismatch - verify field types match\n   b) Permission errors - ensure integration user has proper access\n   c) Rate limits - check API usage in Settings > API > Usage\n4. For immediate fix, try 'Force Resync' on affected records\n5. If issues persist, export sync logs and contact support@bain.com with job ID\n\n[ACTION_LINK:View Sync Status|https://bain4.lightning.force.com/cortex/settings/sync]\n[ACTION_LINK:Force Resync|https://bain4.lightning.force.com/cortex/sync/force|TOOL_CALL:forceCortexResync]",
+    "category": "troubleshooting"
+  },
+  {
+    "id": "C009",
+    "query": "How do I add a new user to Cortex?",
+    "resolution": "To add a new user to Cortex:\n\n1. Go to Settings > Users > User List\n2. Click 'New User'\n3. Enter user details: Name, Email, Username\n4. Select user license type\n5. Assign a role and profile\n6. Set up reporting hierarchy (manager)\n7. Click 'Save' - user will receive welcome email\n\n[ACTION_LINK:Add New User|https://bain4.lightning.force.com/cortex/settings/users/new|TOOL_CALL:addCortexUser]",
+    "category": "user_management"
+  },
+  {
+    "id": "C009a",
+    "query": "Create Cortex user account",
+    "resolution": "To add a new user to Cortex:\n\n1. Go to Settings > Users > User List\n2. Click 'New User'\n3. Enter user details: Name, Email, Username\n4. Select user license type\n5. Assign a role and profile\n6. Set up reporting hierarchy (manager)\n7. Click 'Save' - user will receive welcome email\n\n[ACTION_LINK:Add New User|https://bain4.lightning.force.com/cortex/settings/users/new|TOOL_CALL:addCortexUser]",
+    "category": "user_management"
+  },
+  {
+    "id": "C009b",
+    "query": "Onboard new team member to Cortex",
+    "resolution": "To add a new user to Cortex:\n\n1. Go to Settings > Users > User List\n2. Click 'New User'\n3. Enter user details: Name, Email, Username\n4. Select user license type\n5. Assign a role and profile\n6. Set up reporting hierarchy (manager)\n7. Click 'Save' - user will receive welcome email\n\n[ACTION_LINK:Add New User|https://bain4.lightning.force.com/cortex/settings/users/new|TOOL_CALL:addCortexUser]",
+    "category": "user_management"
+  },
+  {
+    "id": "C010",
+    "query": "How do I reset a user's password in Cortex?",
+    "resolution": "To reset a user's password in Cortex:\n\n1. Go to Settings > Users > User List\n2. Search for the user by name or email\n3. Click on the user record\n4. Click 'Reset Password' button\n5. User will receive password reset email immediately\n\nAlternatively, users can self-reset via the login page 'Forgot Password' link.\n\n[ACTION_LINK:Reset User Password|https://bain4.lightning.force.com/cortex/settings/users/reset|TOOL_CALL:resetCortexPassword]",
+    "category": "user_management"
+  },
+  {
+    "id": "C010a",
+    "query": "User forgot Cortex password",
+    "resolution": "To reset a user's password in Cortex:\n\n1. Go to Settings > Users > User List\n2. Search for the user by name or email\n3. Click on the user record\n4. Click 'Reset Password' button\n5. User will receive password reset email immediately\n\nAlternatively, users can self-reset via the login page 'Forgot Password' link.\n\n[ACTION_LINK:Reset User Password|https://bain4.lightning.force.com/cortex/settings/users/reset|TOOL_CALL:resetCortexPassword]",
+    "category": "user_management"
+  },
+  {
+    "id": "C010b",
+    "query": "Change Cortex password",
+    "resolution": "To reset a user's password in Cortex:\n\n1. Go to Settings > Users > User List\n2. Search for the user by name or email\n3. Click on the user record\n4. Click 'Reset Password' button\n5. User will receive password reset email immediately\n\nAlternatively, users can self-reset via the login page 'Forgot Password' link.\n\n[ACTION_LINK:Reset User Password|https://bain4.lightning.force.com/cortex/settings/users/reset|TOOL_CALL:resetCortexPassword]",
+    "category": "user_management"
+  },
+  {
+    "id": "C011",
+    "query": "How do I export data from Cortex?",
+    "resolution": "To export data from Cortex:\n\n1. Go to Settings > Data > Export\n2. Select objects to export (Accounts, Contacts, Deals, etc.)\n3. Choose export format: CSV or Excel\n4. Apply filters if needed (date range, record types)\n5. Click 'Export' - download link will be emailed\n\nFor scheduled exports, use Data Loader or the Export API.\n\n[ACTION_LINK:Export Data|https://bain4.lightning.force.com/cortex/data/export|TOOL_CALL:exportCortexData]",
+    "category": "data"
+  },
+  {
+    "id": "C011a",
+    "query": "Download Cortex data",
+    "resolution": "To export data from Cortex:\n\n1. Go to Settings > Data > Export\n2. Select objects to export (Accounts, Contacts, Deals, etc.)\n3. Choose export format: CSV or Excel\n4. Apply filters if needed (date range, record types)\n5. Click 'Export' - download link will be emailed\n\nFor scheduled exports, use Data Loader or the Export API.\n\n[ACTION_LINK:Export Data|https://bain4.lightning.force.com/cortex/data/export|TOOL_CALL:exportCortexData]",
+    "category": "data"
+  },
+  {
+    "id": "C011b",
+    "query": "Extract data from Cortex CRM",
+    "resolution": "To export data from Cortex:\n\n1. Go to Settings > Data > Export\n2. Select objects to export (Accounts, Contacts, Deals, etc.)\n3. Choose export format: CSV or Excel\n4. Apply filters if needed (date range, record types)\n5. Click 'Export' - download link will be emailed\n\nFor scheduled exports, use Data Loader or the Export API.\n\n[ACTION_LINK:Export Data|https://bain4.lightning.force.com/cortex/data/export|TOOL_CALL:exportCortexData]",
+    "category": "data"
+  },
+  {
+    "id": "C012",
+    "query": "How do I delete duplicate records in Cortex?",
+    "resolution": "To manage duplicate records in Cortex:\n\n1. Go to Settings > Data Quality > Duplicate Management\n2. Run duplicate detection job on desired object\n3. Review detected duplicates in the merge queue\n4. Select master record and records to merge\n5. Choose which field values to keep\n6. Click 'Merge' to consolidate records\n\nSet up duplicate rules to prevent future duplicates.\n\n[ACTION_LINK:Run Duplicate Check|https://bain4.lightning.force.com/cortex/data/duplicates|TOOL_CALL:runDuplicateCheck]",
+    "category": "data"
+  },
+  {
+    "id": "C012a",
+    "query": "Merge duplicate records in Cortex",
+    "resolution": "To manage duplicate records in Cortex:\n\n1. Go to Settings > Data Quality > Duplicate Management\n2. Run duplicate detection job on desired object\n3. Review detected duplicates in the merge queue\n4. Select master record and records to merge\n5. Choose which field values to keep\n6. Click 'Merge' to consolidate records\n\nSet up duplicate rules to prevent future duplicates.\n\n[ACTION_LINK:Run Duplicate Check|https://bain4.lightning.force.com/cortex/data/duplicates|TOOL_CALL:runDuplicateCheck]",
+    "category": "data"
+  },
+  {
+    "id": "C012b",
+    "query": "Remove duplicates in Cortex",
+    "resolution": "To manage duplicate records in Cortex:\n\n1. Go to Settings > Data Quality > Duplicate Management\n2. Run duplicate detection job on desired object\n3. Review detected duplicates in the merge queue\n4. Select master record and records to merge\n5. Choose which field values to keep\n6. Click 'Merge' to consolidate records\n\nSet up duplicate rules to prevent future duplicates.\n\n[ACTION_LINK:Run Duplicate Check|https://bain4.lightning.force.com/cortex/data/duplicates|TOOL_CALL:runDuplicateCheck]",
+    "category": "data"
+  },
+  {
+    "id": "C013",
+    "query": "Cortex is running slow",
+    "resolution": "To troubleshoot Cortex performance issues:\n\n1. Clear browser cache and cookies\n2. Try a different browser (Chrome recommended)\n3. Check your internet connection speed\n4. Disable browser extensions temporarily\n5. Check Cortex status page for any ongoing issues\n6. If using VPN, try disconnecting\n\nIf issues persist, contact support with your browser version and screenshots.\n\n[ACTION_LINK:Check System Status|https://status.cortex.bain.com]\n[ACTION_LINK:Clear Cache & Refresh|https://bain4.lightning.force.com/cortex/refresh|TOOL_CALL:refreshCortexSession]",
+    "category": "troubleshooting"
+  },
+  {
+    "id": "C013a",
+    "query": "Cortex performance issues",
+    "resolution": "To troubleshoot Cortex performance issues:\n\n1. Clear browser cache and cookies\n2. Try a different browser (Chrome recommended)\n3. Check your internet connection speed\n4. Disable browser extensions temporarily\n5. Check Cortex status page for any ongoing issues\n6. If using VPN, try disconnecting\n\nIf issues persist, contact support with your browser version and screenshots.\n\n[ACTION_LINK:Check System Status|https://status.cortex.bain.com]\n[ACTION_LINK:Clear Cache & Refresh|https://bain4.lightning.force.com/cortex/refresh|TOOL_CALL:refreshCortexSession]",
+    "category": "troubleshooting"
+  },
+  {
+    "id": "C013b",
+    "query": "Cortex loading slowly",
+    "resolution": "To troubleshoot Cortex performance issues:\n\n1. Clear browser cache and cookies\n2. Try a different browser (Chrome recommended)\n3. Check your internet connection speed\n4. Disable browser extensions temporarily\n5. Check Cortex status page for any ongoing issues\n6. If using VPN, try disconnecting\n\nIf issues persist, contact support with your browser version and screenshots.\n\n[ACTION_LINK:Check System Status|https://status.cortex.bain.com]\n[ACTION_LINK:Clear Cache & Refresh|https://bain4.lightning.force.com/cortex/refresh|TOOL_CALL:refreshCortexSession]",
+    "category": "troubleshooting"
+  },
+  {
+    "id": "C014",
+    "query": "How do I deactivate a user in Cortex?",
+    "resolution": "To deactivate a user in Cortex:\n\n1. Go to Settings > Users > User List\n2. Search for the user to deactivate\n3. Click on the user record\n4. Click 'Deactivate' button\n5. Confirm deactivation\n\nDeactivated users cannot log in but their data and history are preserved. You can reactivate them later if needed.\n\n[ACTION_LINK:Deactivate User|https://bain4.lightning.force.com/cortex/settings/users/deactivate|TOOL_CALL:deactivateCortexUser]",
+    "category": "user_management"
+  },
+  {
+    "id": "C014a",
+    "query": "Remove user from Cortex",
+    "resolution": "To deactivate a user in Cortex:\n\n1. Go to Settings > Users > User List\n2. Search for the user to deactivate\n3. Click on the user record\n4. Click 'Deactivate' button\n5. Confirm deactivation\n\nDeactivated users cannot log in but their data and history are preserved. You can reactivate them later if needed.\n\n[ACTION_LINK:Deactivate User|https://bain4.lightning.force.com/cortex/settings/users/deactivate|TOOL_CALL:deactivateCortexUser]",
+    "category": "user_management"
+  },
+  {
+    "id": "C014b",
+    "query": "Disable Cortex user account",
+    "resolution": "To deactivate a user in Cortex:\n\n1. Go to Settings > Users > User List\n2. Search for the user to deactivate\n3. Click on the user record\n4. Click 'Deactivate' button\n5. Confirm deactivation\n\nDeactivated users cannot log in but their data and history are preserved. You can reactivate them later if needed.\n\n[ACTION_LINK:Deactivate User|https://bain4.lightning.force.com/cortex/settings/users/deactivate|TOOL_CALL:deactivateCortexUser]",
+    "category": "user_management"
   }
 ]
-

@@ -38,6 +38,14 @@ class RetrievedContext(BaseModel):
     category: Optional[str] = None
 
 
+class ActionLink(BaseModel):
+    """Schema for action links in responses"""
+    label: str = Field(..., description="Display label for the action button")
+    url: str = Field(..., description="URL to navigate to when clicked")
+    tool_call: Optional[str] = Field(None, description="Tool call identifier if this is a tool action")
+    is_tool_action: bool = Field(default=False, description="Whether this triggers a tool action")
+
+
 class ChatResponse(BaseModel):
     """Response schema for chat endpoint"""
     answer: str = Field(..., description="AI-generated response")
@@ -52,6 +60,10 @@ class ChatResponse(BaseModel):
     confidence: float = Field(
         default=0.0,
         description="Confidence score of the response"
+    )
+    action_links: list[ActionLink] = Field(
+        default_factory=list,
+        description="Action links for tool calling or navigation"
     )
 
 

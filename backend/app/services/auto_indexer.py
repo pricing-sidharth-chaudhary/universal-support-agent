@@ -142,6 +142,10 @@ class AutoIndexerService:
             logger.error(f"Failed to store tickets for agent '{agent.id}': {e}")
             return 0
     
+    def reload_config(self):
+        """Reload agents configuration from JSON file"""
+        self._load_agents_config()
+    
     def index_all_agents(self, force: bool = False) -> dict[str, int]:
         """
         Index all configured agents.
@@ -152,6 +156,9 @@ class AutoIndexerService:
         Returns:
             Dictionary of agent_id -> tickets indexed
         """
+        # Reload config to pick up any changes
+        self.reload_config()
+        
         results = {}
         
         for agent in self.agents_config:

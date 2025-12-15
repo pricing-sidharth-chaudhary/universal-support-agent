@@ -1,0 +1,231 @@
+[
+  {
+    "id": "U001",
+    "query": "Who do I contact for pricing issues?",
+    "resolution": "For pricing-related queries, please contact the Pricing Team:\n\n**Point of Contact:** Pricing Support Team\n**Email:** pricing-support@bain.com\n**Slack:** #pricing-help\n\nCommon pricing issues include:\n- Pricing Configurator access\n- Rate updates\n- Opportunity pricing\n- Approval workflows\n\n[ACTION_LINK:Email Pricing Team|mailto:pricing-support@bain.com]\n[ACTION_LINK:Open Pricing Slack|https://bain.slack.com/channels/pricing-help]",
+    "category": "routing"
+  },
+  {
+    "id": "U001a",
+    "query": "Pricing team contact",
+    "resolution": "For pricing-related queries, please contact the Pricing Team:\n\n**Point of Contact:** Pricing Support Team\n**Email:** pricing-support@bain.com\n**Slack:** #pricing-help\n\nCommon pricing issues include:\n- Pricing Configurator access\n- Rate updates\n- Opportunity pricing\n- Approval workflows\n\n[ACTION_LINK:Email Pricing Team|mailto:pricing-support@bain.com]\n[ACTION_LINK:Open Pricing Slack|https://bain.slack.com/channels/pricing-help]",
+    "category": "routing"
+  },
+  {
+    "id": "U002",
+    "query": "Who handles Cortex CRM support?",
+    "resolution": "For Cortex CRM-related queries, please contact the Cortex Team:\n\n**Point of Contact:** Cortex CRM Support\n**Email:** cortex-support@bain.com\n**Slack:** #cortex-help\n**Office Hours:** Tuesdays & Thursdays 2-3 PM EST\n\nCommon Cortex issues include:\n- User setup and permissions\n- Data migration\n- Custom fields and workflows\n- Reporting and dashboards\n\n[ACTION_LINK:Email Cortex Team|mailto:cortex-support@bain.com]\n[ACTION_LINK:Open Cortex Slack|https://bain.slack.com/channels/cortex-help]",
+    "category": "routing"
+  },
+  {
+    "id": "U002a",
+    "query": "Cortex team contact",
+    "resolution": "For Cortex CRM-related queries, please contact the Cortex Team:\n\n**Point of Contact:** Cortex CRM Support\n**Email:** cortex-support@bain.com\n**Slack:** #cortex-help\n**Office Hours:** Tuesdays & Thursdays 2-3 PM EST\n\nCommon Cortex issues include:\n- User setup and permissions\n- Data migration\n- Custom fields and workflows\n- Reporting and dashboards\n\n[ACTION_LINK:Email Cortex Team|mailto:cortex-support@bain.com]\n[ACTION_LINK:Open Cortex Slack|https://bain.slack.com/channels/cortex-help]",
+    "category": "routing"
+  },
+  {
+    "id": "U002b",
+    "query": "CRM support contact",
+    "resolution": "For Cortex CRM-related queries, please contact the Cortex Team:\n\n**Point of Contact:** Cortex CRM Support\n**Email:** cortex-support@bain.com\n**Slack:** #cortex-help\n**Office Hours:** Tuesdays & Thursdays 2-3 PM EST\n\nCommon Cortex issues include:\n- User setup and permissions\n- Data migration\n- Custom fields and workflows\n- Reporting and dashboards\n\n[ACTION_LINK:Email Cortex Team|mailto:cortex-support@bain.com]\n[ACTION_LINK:Open Cortex Slack|https://bain.slack.com/channels/cortex-help]",
+    "category": "routing"
+  },
+  {
+    "id": "U003",
+    "query": "Who do I contact for API integrations?",
+    "resolution": "For API and integration-related queries, please contact the Integrations Team:\n\n**Point of Contact:** Integration Engineering\n**Email:** integrations@bain.com\n**Slack:** #integrations-support\n**Documentation:** https://api.bain.com/docs\n\nCommon integration issues include:\n- API credentials and access\n- Webhook configuration\n- Third-party connections (Slack, Microsoft 365, Okta)\n- Data sync issues\n\n[ACTION_LINK:Email Integrations Team|mailto:integrations@bain.com]\n[ACTION_LINK:Open Integrations Slack|https://bain.slack.com/channels/integrations-support]",
+    "category": "routing"
+  },
+  {
+    "id": "U003a",
+    "query": "Integrations team contact",
+    "resolution": "For API and integration-related queries, please contact the Integrations Team:\n\n**Point of Contact:** Integration Engineering\n**Email:** integrations@bain.com\n**Slack:** #integrations-support\n**Documentation:** https://api.bain.com/docs\n\nCommon integration issues include:\n- API credentials and access\n- Webhook configuration\n- Third-party connections (Slack, Microsoft 365, Okta)\n- Data sync issues\n\n[ACTION_LINK:Email Integrations Team|mailto:integrations@bain.com]\n[ACTION_LINK:Open Integrations Slack|https://bain.slack.com/channels/integrations-support]",
+    "category": "routing"
+  },
+  {
+    "id": "U004",
+    "query": "IT help desk contact",
+    "resolution": "For general IT support, please contact the IT Help Desk:\n\n**Point of Contact:** IT Service Desk\n**Email:** it-helpdesk@bain.com\n**Phone:** +1-800-BAIN-HELP\n**Portal:** https://bain.service-now.com\n**Hours:** 24/7 Support\n\nCommon IT issues include:\n- Password resets\n- VPN and network access\n- Hardware issues\n- Software installations\n\n[ACTION_LINK:Email IT Help Desk|mailto:it-helpdesk@bain.com]\n[ACTION_LINK:Open ServiceNow Portal|https://bain.service-now.com]",
+    "category": "routing"
+  },
+  {
+    "id": "U004a",
+    "query": "Who handles IT issues?",
+    "resolution": "For general IT support, please contact the IT Help Desk:\n\n**Point of Contact:** IT Service Desk\n**Email:** it-helpdesk@bain.com\n**Phone:** +1-800-BAIN-HELP\n**Portal:** https://bain.service-now.com\n**Hours:** 24/7 Support\n\nCommon IT issues include:\n- Password resets\n- VPN and network access\n- Hardware issues\n- Software installations\n\n[ACTION_LINK:Email IT Help Desk|mailto:it-helpdesk@bain.com]\n[ACTION_LINK:Open ServiceNow Portal|https://bain.service-now.com]",
+    "category": "routing"
+  },
+  {
+    "id": "U004b",
+    "query": "IT support team",
+    "resolution": "For general IT support, please contact the IT Help Desk:\n\n**Point of Contact:** IT Service Desk\n**Email:** it-helpdesk@bain.com\n**Phone:** +1-800-BAIN-HELP\n**Portal:** https://bain.service-now.com\n**Hours:** 24/7 Support\n\nCommon IT issues include:\n- Password resets\n- VPN and network access\n- Hardware issues\n- Software installations\n\n[ACTION_LINK:Email IT Help Desk|mailto:it-helpdesk@bain.com]\n[ACTION_LINK:Open ServiceNow Portal|https://bain.service-now.com]",
+    "category": "routing"
+  },
+  {
+    "id": "U005",
+    "query": "HR contact information",
+    "resolution": "For HR-related queries, please contact Human Resources:\n\n**Point of Contact:** HR Service Center\n**Email:** hr-support@bain.com\n**Portal:** https://workday.bain.com\n**Hours:** Mon-Fri 9 AM - 6 PM EST\n\nCommon HR topics include:\n- Benefits and enrollment\n- Time off and leave\n- Payroll questions\n- Performance reviews\n\n[ACTION_LINK:Email HR|mailto:hr-support@bain.com]\n[ACTION_LINK:Open Workday|https://workday.bain.com]",
+    "category": "routing"
+  },
+  {
+    "id": "U005a",
+    "query": "Who handles HR questions?",
+    "resolution": "For HR-related queries, please contact Human Resources:\n\n**Point of Contact:** HR Service Center\n**Email:** hr-support@bain.com\n**Portal:** https://workday.bain.com\n**Hours:** Mon-Fri 9 AM - 6 PM EST\n\nCommon HR topics include:\n- Benefits and enrollment\n- Time off and leave\n- Payroll questions\n- Performance reviews\n\n[ACTION_LINK:Email HR|mailto:hr-support@bain.com]\n[ACTION_LINK:Open Workday|https://workday.bain.com]",
+    "category": "routing"
+  },
+  {
+    "id": "U006",
+    "query": "I have a pricing configurator issue",
+    "resolution": "This is a **Pricing Team** issue. Here are your options:\n\n1. **Self-Service:** Try the Pricing Agent for immediate help with common issues\n2. **Contact POC:** Email pricing-support@bain.com\n3. **Slack:** Post in #pricing-help for quick responses\n\nFor urgent issues, please mention 'URGENT' in your message.\n\n[ACTION_LINK:Open Pricing Agent|/agents/pricing|TOOL_CALL:redirectToPricingAgent]\n[ACTION_LINK:Email Pricing Team|mailto:pricing-support@bain.com]",
+    "category": "triage"
+  },
+  {
+    "id": "U006a",
+    "query": "Pricing tool not working",
+    "resolution": "This is a **Pricing Team** issue. Here are your options:\n\n1. **Self-Service:** Try the Pricing Agent for immediate help with common issues\n2. **Contact POC:** Email pricing-support@bain.com\n3. **Slack:** Post in #pricing-help for quick responses\n\nFor urgent issues, please mention 'URGENT' in your message.\n\n[ACTION_LINK:Open Pricing Agent|/agents/pricing|TOOL_CALL:redirectToPricingAgent]\n[ACTION_LINK:Email Pricing Team|mailto:pricing-support@bain.com]",
+    "category": "triage"
+  },
+  {
+    "id": "U007",
+    "query": "I have a Cortex problem",
+    "resolution": "This is a **Cortex CRM Team** issue. Here are your options:\n\n1. **Self-Service:** Try the Cortex Agent for immediate help with common issues\n2. **Contact POC:** Email cortex-support@bain.com\n3. **Office Hours:** Join Tuesdays & Thursdays 2-3 PM EST\n\nFor urgent issues affecting multiple users, escalate immediately.\n\n[ACTION_LINK:Open Cortex Agent|/agents/cortex|TOOL_CALL:redirectToCortexAgent]\n[ACTION_LINK:Email Cortex Team|mailto:cortex-support@bain.com]",
+    "category": "triage"
+  },
+  {
+    "id": "U007a",
+    "query": "CRM issue help",
+    "resolution": "This is a **Cortex CRM Team** issue. Here are your options:\n\n1. **Self-Service:** Try the Cortex Agent for immediate help with common issues\n2. **Contact POC:** Email cortex-support@bain.com\n3. **Office Hours:** Join Tuesdays & Thursdays 2-3 PM EST\n\nFor urgent issues affecting multiple users, escalate immediately.\n\n[ACTION_LINK:Open Cortex Agent|/agents/cortex|TOOL_CALL:redirectToCortexAgent]\n[ACTION_LINK:Email Cortex Team|mailto:cortex-support@bain.com]",
+    "category": "triage"
+  },
+  {
+    "id": "U007b",
+    "query": "Cortex is not working",
+    "resolution": "This is a **Cortex CRM Team** issue. Here are your options:\n\n1. **Self-Service:** Try the Cortex Agent for immediate help with common issues\n2. **Contact POC:** Email cortex-support@bain.com\n3. **Office Hours:** Join Tuesdays & Thursdays 2-3 PM EST\n\nFor urgent issues affecting multiple users, escalate immediately.\n\n[ACTION_LINK:Open Cortex Agent|/agents/cortex|TOOL_CALL:redirectToCortexAgent]\n[ACTION_LINK:Email Cortex Team|mailto:cortex-support@bain.com]",
+    "category": "triage"
+  },
+  {
+    "id": "U008",
+    "query": "I need help with an API",
+    "resolution": "This is an **Integrations Team** issue. Here are your options:\n\n1. **Self-Service:** Try the Integrations Agent for immediate help\n2. **Documentation:** Check https://api.bain.com/docs\n3. **Contact POC:** Email integrations@bain.com\n\n[ACTION_LINK:Open Integrations Agent|/agents/integrations|TOOL_CALL:redirectToIntegrationsAgent]\n[ACTION_LINK:View API Docs|https://api.bain.com/docs]\n[ACTION_LINK:Email Integrations Team|mailto:integrations@bain.com]",
+    "category": "triage"
+  },
+  {
+    "id": "U008a",
+    "query": "Integration not working",
+    "resolution": "This is an **Integrations Team** issue. Here are your options:\n\n1. **Self-Service:** Try the Integrations Agent for immediate help\n2. **Documentation:** Check https://api.bain.com/docs\n3. **Contact POC:** Email integrations@bain.com\n\n[ACTION_LINK:Open Integrations Agent|/agents/integrations|TOOL_CALL:redirectToIntegrationsAgent]\n[ACTION_LINK:View API Docs|https://api.bain.com/docs]\n[ACTION_LINK:Email Integrations Team|mailto:integrations@bain.com]",
+    "category": "triage"
+  },
+  {
+    "id": "U009",
+    "query": "How do I reset my password?",
+    "resolution": "For password resets, follow these steps based on the system:\n\n**Bain Network Password:**\n1. Visit https://passwordreset.bain.com\n2. Enter your employee ID\n3. Follow the verification steps\n\n**Cortex/Salesforce Password:**\n1. Go to the login page\n2. Click 'Forgot Password'\n3. Check your email for reset link\n\n**Other Systems:**\nContact IT Help Desk at it-helpdesk@bain.com\n\n[ACTION_LINK:Reset Bain Password|https://passwordreset.bain.com|TOOL_CALL:resetBainPassword]\n[ACTION_LINK:Contact IT Help Desk|mailto:it-helpdesk@bain.com]",
+    "category": "general"
+  },
+  {
+    "id": "U009a",
+    "query": "Forgot my password",
+    "resolution": "For password resets, follow these steps based on the system:\n\n**Bain Network Password:**\n1. Visit https://passwordreset.bain.com\n2. Enter your employee ID\n3. Follow the verification steps\n\n**Cortex/Salesforce Password:**\n1. Go to the login page\n2. Click 'Forgot Password'\n3. Check your email for reset link\n\n**Other Systems:**\nContact IT Help Desk at it-helpdesk@bain.com\n\n[ACTION_LINK:Reset Bain Password|https://passwordreset.bain.com|TOOL_CALL:resetBainPassword]\n[ACTION_LINK:Contact IT Help Desk|mailto:it-helpdesk@bain.com]",
+    "category": "general"
+  },
+  {
+    "id": "U009b",
+    "query": "Can't login to my account",
+    "resolution": "For password resets, follow these steps based on the system:\n\n**Bain Network Password:**\n1. Visit https://passwordreset.bain.com\n2. Enter your employee ID\n3. Follow the verification steps\n\n**Cortex/Salesforce Password:**\n1. Go to the login page\n2. Click 'Forgot Password'\n3. Check your email for reset link\n\n**Other Systems:**\nContact IT Help Desk at it-helpdesk@bain.com\n\n[ACTION_LINK:Reset Bain Password|https://passwordreset.bain.com|TOOL_CALL:resetBainPassword]\n[ACTION_LINK:Contact IT Help Desk|mailto:it-helpdesk@bain.com]",
+    "category": "general"
+  },
+  {
+    "id": "U010",
+    "query": "VPN not connecting",
+    "resolution": "For VPN connection issues:\n\n1. **Restart VPN Client:** Close and reopen GlobalProtect/Cisco AnyConnect\n2. **Check Credentials:** Ensure you're using your current Bain password\n3. **Try Different Server:** Select an alternate VPN gateway\n4. **Restart Computer:** Sometimes a full restart resolves connection issues\n\nIf issues persist, contact IT Help Desk.\n\n[ACTION_LINK:VPN Troubleshooting Guide|https://bain.sharepoint.com/it/vpn-guide]\n[ACTION_LINK:Contact IT Help Desk|mailto:it-helpdesk@bain.com|TOOL_CALL:contactITHelpDesk]",
+    "category": "general"
+  },
+  {
+    "id": "U010a",
+    "query": "VPN issues",
+    "resolution": "For VPN connection issues:\n\n1. **Restart VPN Client:** Close and reopen GlobalProtect/Cisco AnyConnect\n2. **Check Credentials:** Ensure you're using your current Bain password\n3. **Try Different Server:** Select an alternate VPN gateway\n4. **Restart Computer:** Sometimes a full restart resolves connection issues\n\nIf issues persist, contact IT Help Desk.\n\n[ACTION_LINK:VPN Troubleshooting Guide|https://bain.sharepoint.com/it/vpn-guide]\n[ACTION_LINK:Contact IT Help Desk|mailto:it-helpdesk@bain.com|TOOL_CALL:contactITHelpDesk]",
+    "category": "general"
+  },
+  {
+    "id": "U010b",
+    "query": "Can't connect to VPN",
+    "resolution": "For VPN connection issues:\n\n1. **Restart VPN Client:** Close and reopen GlobalProtect/Cisco AnyConnect\n2. **Check Credentials:** Ensure you're using your current Bain password\n3. **Try Different Server:** Select an alternate VPN gateway\n4. **Restart Computer:** Sometimes a full restart resolves connection issues\n\nIf issues persist, contact IT Help Desk.\n\n[ACTION_LINK:VPN Troubleshooting Guide|https://bain.sharepoint.com/it/vpn-guide]\n[ACTION_LINK:Contact IT Help Desk|mailto:it-helpdesk@bain.com|TOOL_CALL:contactITHelpDesk]",
+    "category": "general"
+  },
+  {
+    "id": "U011",
+    "query": "How do I submit a ServiceNow ticket?",
+    "resolution": "To submit a ServiceNow ticket:\n\n1. Go to https://bain.service-now.com\n2. Log in with your Bain credentials\n3. Click 'Create Incident' or 'Request Something'\n4. Fill in the required details:\n   - Short description\n   - Category\n   - Priority\n   - Detailed description\n5. Attach any relevant screenshots\n6. Submit the ticket\n\nYou'll receive a ticket number for tracking.\n\n[ACTION_LINK:Open ServiceNow|https://bain.service-now.com|TOOL_CALL:openServiceNow]\n[ACTION_LINK:Create New Ticket|https://bain.service-now.com/sp?id=sc_cat_item&sys_id=create|TOOL_CALL:createServiceNowTicket]",
+    "category": "general"
+  },
+  {
+    "id": "U011a",
+    "query": "Create a support ticket",
+    "resolution": "To submit a ServiceNow ticket:\n\n1. Go to https://bain.service-now.com\n2. Log in with your Bain credentials\n3. Click 'Create Incident' or 'Request Something'\n4. Fill in the required details:\n   - Short description\n   - Category\n   - Priority\n   - Detailed description\n5. Attach any relevant screenshots\n6. Submit the ticket\n\nYou'll receive a ticket number for tracking.\n\n[ACTION_LINK:Open ServiceNow|https://bain.service-now.com|TOOL_CALL:openServiceNow]\n[ACTION_LINK:Create New Ticket|https://bain.service-now.com/sp?id=sc_cat_item&sys_id=create|TOOL_CALL:createServiceNowTicket]",
+    "category": "general"
+  },
+  {
+    "id": "U011b",
+    "query": "Log a ticket",
+    "resolution": "To submit a ServiceNow ticket:\n\n1. Go to https://bain.service-now.com\n2. Log in with your Bain credentials\n3. Click 'Create Incident' or 'Request Something'\n4. Fill in the required details:\n   - Short description\n   - Category\n   - Priority\n   - Detailed description\n5. Attach any relevant screenshots\n6. Submit the ticket\n\nYou'll receive a ticket number for tracking.\n\n[ACTION_LINK:Open ServiceNow|https://bain.service-now.com|TOOL_CALL:openServiceNow]\n[ACTION_LINK:Create New Ticket|https://bain.service-now.com/sp?id=sc_cat_item&sys_id=create|TOOL_CALL:createServiceNowTicket]",
+    "category": "general"
+  },
+  {
+    "id": "U012",
+    "query": "What applications are available at Bain?",
+    "resolution": "Here are the key applications available at Bain:\n\n**CRM & Sales:**\n- Cortex (Salesforce) - CRM platform\n- Pricing Configurator - Opportunity pricing\n\n**Productivity:**\n- Microsoft 365 - Email, Teams, Office apps\n- Workday - HR and time tracking\n\n**Development:**\n- API Portal - Integration APIs\n- ServiceNow - IT service management\n\nFor access to any application, contact the respective team or IT Help Desk.\n\n[ACTION_LINK:View All Applications|https://bain.sharepoint.com/apps]\n[ACTION_LINK:Request Access|https://bain.service-now.com/access|TOOL_CALL:requestApplicationAccess]",
+    "category": "general"
+  },
+  {
+    "id": "U012a",
+    "query": "List of Bain tools",
+    "resolution": "Here are the key applications available at Bain:\n\n**CRM & Sales:**\n- Cortex (Salesforce) - CRM platform\n- Pricing Configurator - Opportunity pricing\n\n**Productivity:**\n- Microsoft 365 - Email, Teams, Office apps\n- Workday - HR and time tracking\n\n**Development:**\n- API Portal - Integration APIs\n- ServiceNow - IT service management\n\nFor access to any application, contact the respective team or IT Help Desk.\n\n[ACTION_LINK:View All Applications|https://bain.sharepoint.com/apps]\n[ACTION_LINK:Request Access|https://bain.service-now.com/access|TOOL_CALL:requestApplicationAccess]",
+    "category": "general"
+  },
+  {
+    "id": "U013",
+    "query": "I need access to an application",
+    "resolution": "To request access to a Bain application:\n\n1. Go to ServiceNow Access Request portal\n2. Select the application you need access to\n3. Provide business justification\n4. Submit for manager approval\n5. Access is typically granted within 1-2 business days after approval\n\n**Common Applications:**\n- Cortex CRM - Contact cortex-support@bain.com\n- Pricing Configurator - Contact pricing-support@bain.com\n- API Access - Contact integrations@bain.com\n\n[ACTION_LINK:Submit Access Request|https://bain.service-now.com/access|TOOL_CALL:requestApplicationAccess]",
+    "category": "general"
+  },
+  {
+    "id": "U013a",
+    "query": "Request application access",
+    "resolution": "To request access to a Bain application:\n\n1. Go to ServiceNow Access Request portal\n2. Select the application you need access to\n3. Provide business justification\n4. Submit for manager approval\n5. Access is typically granted within 1-2 business days after approval\n\n**Common Applications:**\n- Cortex CRM - Contact cortex-support@bain.com\n- Pricing Configurator - Contact pricing-support@bain.com\n- API Access - Contact integrations@bain.com\n\n[ACTION_LINK:Submit Access Request|https://bain.service-now.com/access|TOOL_CALL:requestApplicationAccess]",
+    "category": "general"
+  },
+  {
+    "id": "U014",
+    "query": "Who is the POC for my issue?",
+    "resolution": "Here's a quick reference for Points of Contact:\n\n| Team | Email | Slack |\n|------|-------|-------|\n| **Pricing** | pricing-support@bain.com | #pricing-help |\n| **Cortex CRM** | cortex-support@bain.com | #cortex-help |\n| **Integrations** | integrations@bain.com | #integrations-support |\n| **IT Help Desk** | it-helpdesk@bain.com | #it-support |\n| **HR** | hr-support@bain.com | #hr-questions |\n\nNot sure which team? Describe your issue and I'll help route you!\n\n[ACTION_LINK:View Full Directory|https://bain.sharepoint.com/support/contacts]",
+    "category": "routing"
+  },
+  {
+    "id": "U014a",
+    "query": "Support team contacts",
+    "resolution": "Here's a quick reference for Points of Contact:\n\n| Team | Email | Slack |\n|------|-------|-------|\n| **Pricing** | pricing-support@bain.com | #pricing-help |\n| **Cortex CRM** | cortex-support@bain.com | #cortex-help |\n| **Integrations** | integrations@bain.com | #integrations-support |\n| **IT Help Desk** | it-helpdesk@bain.com | #it-support |\n| **HR** | hr-support@bain.com | #hr-questions |\n\nNot sure which team? Describe your issue and I'll help route you!\n\n[ACTION_LINK:View Full Directory|https://bain.sharepoint.com/support/contacts]",
+    "category": "routing"
+  },
+  {
+    "id": "U015",
+    "query": "Opportunity approval stuck",
+    "resolution": "For stuck opportunity approvals, this is typically a **Pricing Team** issue:\n\n**Quick Fixes:**\n1. Check if the approver is out of office\n2. Verify all required fields are completed\n3. Check approval workflow status in Cortex\n\n**Escalation:**\nIf urgent, contact pricing-support@bain.com with the Opportunity ID.\n\n[ACTION_LINK:Open Pricing Agent|/agents/pricing|TOOL_CALL:redirectToPricingAgent]\n[ACTION_LINK:Email Pricing Team|mailto:pricing-support@bain.com]",
+    "category": "triage"
+  },
+  {
+    "id": "U015a",
+    "query": "Approval workflow not working",
+    "resolution": "For stuck opportunity approvals, this is typically a **Pricing Team** issue:\n\n**Quick Fixes:**\n1. Check if the approver is out of office\n2. Verify all required fields are completed\n3. Check approval workflow status in Cortex\n\n**Escalation:**\nIf urgent, contact pricing-support@bain.com with the Opportunity ID.\n\n[ACTION_LINK:Open Pricing Agent|/agents/pricing|TOOL_CALL:redirectToPricingAgent]\n[ACTION_LINK:Email Pricing Team|mailto:pricing-support@bain.com]",
+    "category": "triage"
+  },
+  {
+    "id": "U016",
+    "query": "Data not syncing between systems",
+    "resolution": "Data sync issues can involve multiple teams depending on the systems:\n\n**Cortex ↔ Pricing:** Contact Pricing Team\n**Cortex ↔ External Systems:** Contact Integrations Team\n**General Salesforce Sync:** Contact Cortex Team\n\n**Quick Troubleshooting:**\n1. Check the last sync timestamp\n2. Look for error messages in sync logs\n3. Verify API credentials haven't expired\n\n[ACTION_LINK:Open Cortex Agent|/agents/cortex|TOOL_CALL:redirectToCortexAgent]\n[ACTION_LINK:Open Integrations Agent|/agents/integrations|TOOL_CALL:redirectToIntegrationsAgent]",
+    "category": "triage"
+  },
+  {
+    "id": "U016a",
+    "query": "Sync issues between applications",
+    "resolution": "Data sync issues can involve multiple teams depending on the systems:\n\n**Cortex ↔ Pricing:** Contact Pricing Team\n**Cortex ↔ External Systems:** Contact Integrations Team\n**General Salesforce Sync:** Contact Cortex Team\n\n**Quick Troubleshooting:**\n1. Check the last sync timestamp\n2. Look for error messages in sync logs\n3. Verify API credentials haven't expired\n\n[ACTION_LINK:Open Cortex Agent|/agents/cortex|TOOL_CALL:redirectToCortexAgent]\n[ACTION_LINK:Open Integrations Agent|/agents/integrations|TOOL_CALL:redirectToIntegrationsAgent]",
+    "category": "triage"
+  }
+]
+

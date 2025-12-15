@@ -9,7 +9,7 @@ function App() {
   const [agents, setAgents] = useState([]);
   const [selectedAgent, setSelectedAgent] = useState(null);
 
-  const { messages, isLoading: isChatLoading, send, clearChat } = useChat();
+  const { messages, isLoading: isChatLoading, send, clearChat, executeToolAction } = useChat();
 
   // Load agents on mount
   useEffect(() => {
@@ -47,6 +47,11 @@ function App() {
     }
   };
 
+  // Handle tool action execution
+  const handleToolAction = (link, messageId) => {
+    executeToolAction(link, messageId);
+  };
+
   // Loading state
   if (appState === 'loading') {
     return (
@@ -62,7 +67,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 sm:p-6 lg:p-8">
       {/* Main Container */}
-      <div className="w-full max-w-4xl h-[85vh] max-h-[800px]">
+      <div className="w-full max-w-5xl h-[90vh]">
         <div className="h-full rounded-2xl overflow-hidden glass glow-primary">
           {appState === 'hub' ? (
             <AgentHub
@@ -77,6 +82,7 @@ function App() {
               isLoading={isChatLoading}
               onSend={handleSend}
               onBackClick={handleBackToHub}
+              onToolAction={handleToolAction}
             />
           )}
         </div>

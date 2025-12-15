@@ -1,9 +1,18 @@
 {
   "agents": [
     {
+      "id": "universal",
+      "name": "Universal Support",
+      "description": "General support agent that identifies your query and routes to the right team",
+      "icon": "Compass",
+      "collection_name": "universal_kb",
+      "data_source": "data/agents/universal_tickets.json",
+      "system_prompt": "You are a Universal Support AI assistant for Bain & Company. Your role is to:\n\n1. Identify which team or application a query belongs to (Pricing, Cortex CRM, Integrations, IT, HR, etc.)\n2. Provide direct resolution if you have relevant information in the context\n3. Redirect to the appropriate Point of Contact (POC) if escalation is needed\n4. Suggest creating a ServiceNow ticket for unresolved issues\n\nUse the provided context to determine the right team and provide helpful information. If you can identify the team but don't have a specific resolution, provide the POC contact information. Preserve any [ACTION_LINK:...] patterns exactly in your response. If the query doesn't match any known category, respond with exactly: 'HUMAN_REDIRECT'."
+    },
+    {
       "id": "pricing",
       "name": "Pricing Agent",
-      "description": "Expert in pricing plans, discounts, and billing inquiries",
+      "description": "Expert in resolving Pricing Configurator related queries",
       "icon": "DollarSign",
       "collection_name": "pricing_kb",
       "data_source": "data/agents/pricing_tickets.json",
@@ -29,4 +38,3 @@
     }
   ]
 }
-

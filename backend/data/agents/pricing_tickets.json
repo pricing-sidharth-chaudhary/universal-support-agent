@@ -1,51 +1,518 @@
 [
   {
     "id": "P001",
-    "query": "What are the different pricing tiers available?",
-    "resolution": "We offer three pricing tiers: 1) Starter - $29/month for up to 5 users with basic features. 2) Professional - $79/month for up to 25 users with advanced analytics and priority support. 3) Enterprise - Custom pricing for unlimited users with dedicated account manager, SSO, and custom integrations. All plans include a 14-day free trial.",
-    "category": "pricing_plans"
+    "query": "Not able to access pricing configurator",
+    "resolution": "Please refer to the Presentation to request access to Pricing Configurator Tool.\n\n[ACTION_LINK:Request Access|https://bain.sharepoint.com/pricing-access-request]",
+    "category": "access"
+  },
+  {
+    "id": "P001a",
+    "query": "Cannot access pricing tool",
+    "resolution": "Please refer to the Presentation to request access to Pricing Configurator Tool.\n\n[ACTION_LINK:Request Access|https://bain.sharepoint.com/pricing-access-request]",
+    "category": "access"
+  },
+  {
+    "id": "P001b",
+    "query": "Pricing configurator access denied",
+    "resolution": "Please refer to the Presentation to request access to Pricing Configurator Tool.\n\n[ACTION_LINK:Request Access|https://bain.sharepoint.com/pricing-access-request]",
+    "category": "access"
   },
   {
     "id": "P002",
-    "query": "How do I get a discount for annual billing?",
-    "resolution": "Annual billing provides a 20% discount compared to monthly billing. To switch: 1) Go to Settings > Billing > Subscription. 2) Click 'Switch to Annual'. 3) You'll see the prorated amount and new annual price. 4) Confirm the change. The discount applies immediately, and you'll be charged the annual rate on your next billing date.",
-    "category": "discounts"
+    "query": "Grant access to Pricing configurator",
+    "resolution": "Please refer to the Presentation to request access to Pricing Configurator Tool.\n\n[ACTION_LINK:Request Access|https://bain.sharepoint.com/pricing-access-request]",
+    "category": "access"
+  },
+  {
+    "id": "P002a",
+    "query": "Need pricing configurator permissions",
+    "resolution": "Please refer to the Presentation to request access to Pricing Configurator Tool.\n\n[ACTION_LINK:Request Access|https://bain.sharepoint.com/pricing-access-request]",
+    "category": "access"
+  },
+  {
+    "id": "P002b",
+    "query": "How do I get access to pricing tool",
+    "resolution": "Please refer to the Presentation to request access to Pricing Configurator Tool.\n\n[ACTION_LINK:Request Access|https://bain.sharepoint.com/pricing-access-request]",
+    "category": "access"
   },
   {
     "id": "P003",
-    "query": "Can I upgrade my plan mid-cycle?",
-    "resolution": "Yes, you can upgrade your plan at any time. When upgrading mid-cycle: 1) The price difference is prorated for the remaining days. 2) New features are available immediately. 3) Go to Settings > Billing > Change Plan. 4) Select your new tier and confirm. Your next bill will reflect the new plan price.",
-    "category": "plan_changes"
+    "query": "Please provide access to pricing configurator",
+    "resolution": "Please refer to the Presentation to request access to Pricing Configurator Tool.\n\n[ACTION_LINK:Request Access|https://bain.sharepoint.com/pricing-access-request]",
+    "category": "access"
   },
   {
     "id": "P004",
-    "query": "Is there a discount for non-profit organizations?",
-    "resolution": "Yes, we offer a 50% discount for verified non-profit organizations. To apply: 1) Email sales@company.com with your 501(c)(3) documentation. 2) Include your organization name and current subscription email. 3) Our team will verify within 2-3 business days. 4) Once approved, the discount applies to your next billing cycle and all future charges.",
-    "category": "discounts"
+    "query": "Pricing Configurator Access Request",
+    "resolution": "Please refer to the Presentation to request access to Pricing Configurator Tool.\n\n[ACTION_LINK:Request Access|https://bain.sharepoint.com/pricing-access-request]",
+    "category": "access"
   },
   {
     "id": "P005",
-    "query": "What happens when I exceed my user limit?",
-    "resolution": "When you reach your plan's user limit: 1) You'll receive a notification at 80% and 100% capacity. 2) You can still access the system but cannot add new users. 3) To add more users, either upgrade your plan or remove inactive users. 4) We offer a 7-day grace period to make adjustments before requiring an upgrade.",
-    "category": "limits"
+    "query": "Missing client in pricing configurator",
+    "resolution": "To add a missing client to the pricing configurator:\n\n1. Create an opportunity in Cortex for the client account\n2. Navigate to the 'Resources & Pricing' tab when the opportunity reaches 'Mobilizing to Propose' or 'Closing' stage\n3. Click 'Create Pricing Proposal' to automatically send the client to the pricing configurator\n4. In the configurator, add resources to the pricing quote, save, and click 'Update Cortex'\n5. In Cortex, click for approval and either self-approve or send for approval\n\n[ACTION_LINK:Open Cortex|https://bain4.lightning.force.com]",
+    "category": "client"
+  },
+  {
+    "id": "P005a",
+    "query": "Client not showing in pricing tool",
+    "resolution": "To add a missing client to the pricing configurator:\n\n1. Create an opportunity in Cortex for the client account\n2. Navigate to the 'Resources & Pricing' tab when the opportunity reaches 'Mobilizing to Propose' or 'Closing' stage\n3. Click 'Create Pricing Proposal' to automatically send the client to the pricing configurator\n4. In the configurator, add resources to the pricing quote, save, and click 'Update Cortex'\n5. In Cortex, click for approval and either self-approve or send for approval\n\n[ACTION_LINK:Open Cortex|https://bain4.lightning.force.com]",
+    "category": "client"
+  },
+  {
+    "id": "P005b",
+    "query": "Where is my client in pricing configurator",
+    "resolution": "To add a missing client to the pricing configurator:\n\n1. Create an opportunity in Cortex for the client account\n2. Navigate to the 'Resources & Pricing' tab when the opportunity reaches 'Mobilizing to Propose' or 'Closing' stage\n3. Click 'Create Pricing Proposal' to automatically send the client to the pricing configurator\n4. In the configurator, add resources to the pricing quote, save, and click 'Update Cortex'\n5. In Cortex, click for approval and either self-approve or send for approval\n\n[ACTION_LINK:Open Cortex|https://bain4.lightning.force.com]",
+    "category": "client"
   },
   {
     "id": "P006",
-    "query": "How does the free trial work?",
-    "resolution": "Our 14-day free trial includes: 1) Full access to Professional tier features. 2) No credit card required to start. 3) Up to 10 test users. 4) Full data export if you decide not to continue. At day 12, you'll receive a reminder email. To continue after trial, simply add a payment method in Settings > Billing.",
-    "category": "trial"
+    "query": "Not able to find client in pricing configurator",
+    "resolution": "To add a missing client to the pricing configurator:\n\n1. Create an opportunity in Cortex for the client account\n2. Navigate to the 'Resources & Pricing' tab when the opportunity reaches 'Mobilizing to Propose' or 'Closing' stage\n3. Click 'Create Pricing Proposal' to automatically send the client to the pricing configurator\n4. In the configurator, add resources to the pricing quote, save, and click 'Update Cortex'\n5. In Cortex, click for approval and either self-approve or send for approval\n\n[ACTION_LINK:Open Cortex|https://bain4.lightning.force.com]",
+    "category": "client"
+  },
+  {
+    "id": "P006a",
+    "query": "Can't locate client in pricing",
+    "resolution": "To add a missing client to the pricing configurator:\n\n1. Create an opportunity in Cortex for the client account\n2. Navigate to the 'Resources & Pricing' tab when the opportunity reaches 'Mobilizing to Propose' or 'Closing' stage\n3. Click 'Create Pricing Proposal' to automatically send the client to the pricing configurator\n4. In the configurator, add resources to the pricing quote, save, and click 'Update Cortex'\n5. In Cortex, click for approval and either self-approve or send for approval\n\n[ACTION_LINK:Open Cortex|https://bain4.lightning.force.com]",
+    "category": "client"
   },
   {
     "id": "P007",
-    "query": "Can I get a refund if I'm not satisfied?",
-    "resolution": "We offer a 30-day money-back guarantee for first-time subscribers. To request a refund: 1) Contact billing@company.com within 30 days of your first payment. 2) Provide your account email and reason for cancellation. 3) Refunds are processed within 5-7 business days. Note: This applies to first payment only; subsequent months are non-refundable but you can cancel anytime.",
-    "category": "refunds"
+    "query": "Please unlink cortex-pricing opportunity",
+    "resolution": "To unlink or review a Cortex-Pricing opportunity connection:\n\n1. Review the pricing scenario data for the opportunity\n2. Confirm that the information appears valid\n3. Open and review both the Cortex opportunity and pricing scenario links\n4. If unlinking is required, this action needs admin intervention\n\n[ACTION_LINK:Review Opportunity|https://bain4.lightning.force.com/lightning/r/Opportunity]\n[ACTION_LINK:Open Pricing Scenario|https://pricing.bain.com/opportunities]",
+    "category": "linking"
+  },
+  {
+    "id": "P007a",
+    "query": "Disconnect pricing from cortex opportunity",
+    "resolution": "To unlink or review a Cortex-Pricing opportunity connection:\n\n1. Review the pricing scenario data for the opportunity\n2. Confirm that the information appears valid\n3. Open and review both the Cortex opportunity and pricing scenario links\n4. If unlinking is required, this action needs admin intervention\n\n[ACTION_LINK:Review Opportunity|https://bain4.lightning.force.com/lightning/r/Opportunity]\n[ACTION_LINK:Open Pricing Scenario|https://pricing.bain.com/opportunities]",
+    "category": "linking"
   },
   {
     "id": "P008",
-    "query": "What payment methods do you accept?",
-    "resolution": "We accept the following payment methods: 1) Credit/Debit Cards - Visa, Mastercard, American Express, Discover. 2) ACH Bank Transfer - Available for annual Enterprise plans (US only). 3) Wire Transfer - Available for Enterprise plans over $10,000/year. 4) PayPal - Available in supported regions. To update payment method, go to Settings > Billing > Payment Methods.",
-    "category": "payments"
+    "query": "Please fix linking",
+    "resolution": "To fix opportunity linking issues:\n\n1. Review the pricing scenario data for the opportunity\n2. Confirm that the information appears valid as verified by the pricing team\n3. Open and review both the Cortex configurator link and pricing scenario link\n4. Verify there are no discrepancies that require action\n\n[ACTION_LINK:Review Opportunity|https://bain4.lightning.force.com/lightning/r/Opportunity]\n[ACTION_LINK:Open Pricing Scenario|https://pricing.bain.com/opportunities]",
+    "category": "linking"
+  },
+  {
+    "id": "P008a",
+    "query": "Linking issue between cortex and pricing",
+    "resolution": "To fix opportunity linking issues:\n\n1. Review the pricing scenario data for the opportunity\n2. Confirm that the information appears valid as verified by the pricing team\n3. Open and review both the Cortex configurator link and pricing scenario link\n4. Verify there are no discrepancies that require action\n\n[ACTION_LINK:Review Opportunity|https://bain4.lightning.force.com/lightning/r/Opportunity]\n[ACTION_LINK:Open Pricing Scenario|https://pricing.bain.com/opportunities]",
+    "category": "linking"
+  },
+  {
+    "id": "P009",
+    "query": "Please link to correct opportunity",
+    "resolution": "To fix opportunity linking issues:\n\n1. Review the pricing scenario data for the opportunity\n2. Confirm that the information appears valid as verified by the pricing team\n3. Open and review both the Cortex configurator link and pricing scenario link\n4. Verify there are no discrepancies that require action\n\n[ACTION_LINK:Review Opportunity|https://bain4.lightning.force.com/lightning/r/Opportunity]\n[ACTION_LINK:Open Pricing Scenario|https://pricing.bain.com/opportunities]",
+    "category": "linking"
+  },
+  {
+    "id": "P009a",
+    "query": "Wrong opportunity linked to pricing",
+    "resolution": "To fix opportunity linking issues:\n\n1. Review the pricing scenario data for the opportunity\n2. Confirm that the information appears valid as verified by the pricing team\n3. Open and review both the Cortex configurator link and pricing scenario link\n4. Verify there are no discrepancies that require action\n\n[ACTION_LINK:Review Opportunity|https://bain4.lightning.force.com/lightning/r/Opportunity]\n[ACTION_LINK:Open Pricing Scenario|https://pricing.bain.com/opportunities]",
+    "category": "linking"
+  },
+  {
+    "id": "P010",
+    "query": "Partner Error when Accessing a PC linked in Cortex",
+    "resolution": "When encountering a Partner Error accessing a PC linked opportunity:\n\n1. Please refer to the troubleshooting guide for PC linked opportunities\n2. Clear your browser cache and try again\n3. Ensure you have the correct permissions for the opportunity\n\n[ACTION_LINK:View Troubleshooting Guide|https://bain.sharepoint.com/pricing-troubleshooting]",
+    "category": "errors"
+  },
+  {
+    "id": "P010a",
+    "query": "Getting partner error in pricing configurator",
+    "resolution": "When encountering a Partner Error accessing a PC linked opportunity:\n\n1. Please refer to the troubleshooting guide for PC linked opportunities\n2. Clear your browser cache and try again\n3. Ensure you have the correct permissions for the opportunity\n\n[ACTION_LINK:View Troubleshooting Guide|https://bain.sharepoint.com/pricing-troubleshooting]",
+    "category": "errors"
+  },
+  {
+    "id": "P011",
+    "query": "Error accessing opportunity",
+    "resolution": "When encountering errors accessing an opportunity:\n\n1. Please refer to the troubleshooting guide for PC linked opportunities\n2. Clear your browser cache and try again\n3. Ensure you have the correct permissions for the opportunity\n\n[ACTION_LINK:View Troubleshooting Guide|https://bain.sharepoint.com/pricing-troubleshooting]",
+    "category": "errors"
+  },
+  {
+    "id": "P011a",
+    "query": "Cannot open opportunity in pricing",
+    "resolution": "When encountering errors accessing an opportunity:\n\n1. Please refer to the troubleshooting guide for PC linked opportunities\n2. Clear your browser cache and try again\n3. Ensure you have the correct permissions for the opportunity\n\n[ACTION_LINK:View Troubleshooting Guide|https://bain.sharepoint.com/pricing-troubleshooting]",
+    "category": "errors"
+  },
+  {
+    "id": "P012",
+    "query": "Not able to Add teamlet to my opportunity",
+    "resolution": "To resolve issues adding a teamlet to an opportunity:\n\n1. Verify you have the required Salesforce access and opportunity edit permissions\n2. Confirm that the Opportunity is in a stage where teamlet additions are allowed\n3. Check that the Teamlet feature is enabled for your office/region\n4. Clear browser cache and refresh the Cortex session\n5. Navigate to Opportunity → Related Tab → Teamlet section → New\n\n[ACTION_LINK:Open Cortex Opportunity|https://bain4.lightning.force.com]",
+    "category": "teamlet"
+  },
+  {
+    "id": "P012a",
+    "query": "Teamlet addition failing",
+    "resolution": "To resolve issues adding a teamlet to an opportunity:\n\n1. Verify you have the required Salesforce access and opportunity edit permissions\n2. Confirm that the Opportunity is in a stage where teamlet additions are allowed\n3. Check that the Teamlet feature is enabled for your office/region\n4. Clear browser cache and refresh the Cortex session\n5. Navigate to Opportunity → Related Tab → Teamlet section → New\n\n[ACTION_LINK:Open Cortex Opportunity|https://bain4.lightning.force.com]",
+    "category": "teamlet"
+  },
+  {
+    "id": "P012b",
+    "query": "Cannot add team members to opportunity",
+    "resolution": "To resolve issues adding a teamlet to an opportunity:\n\n1. Verify you have the required Salesforce access and opportunity edit permissions\n2. Confirm that the Opportunity is in a stage where teamlet additions are allowed\n3. Check that the Teamlet feature is enabled for your office/region\n4. Clear browser cache and refresh the Cortex session\n5. Navigate to Opportunity → Related Tab → Teamlet section → New\n\n[ACTION_LINK:Open Cortex Opportunity|https://bain4.lightning.force.com]",
+    "category": "teamlet"
+  },
+  {
+    "id": "P013",
+    "query": "Not able to add a resource to my opportunity",
+    "resolution": "To resolve issues adding a resource to an opportunity:\n\n1. Confirm you have appropriate Cortex permissions to edit the Opportunity\n2. Verify the Opportunity is in an editable stage (not locked or closed)\n3. Check that required fields (staffing region, dates, role type) are completed\n4. Ensure the resource is active and available for the specified project dates\n5. Navigate to Opportunity → Related Tab → Resources → Add Resource\n\n[ACTION_LINK:Open Cortex Opportunity|https://bain4.lightning.force.com]",
+    "category": "resources"
+  },
+  {
+    "id": "P013a",
+    "query": "Resource addition not working",
+    "resolution": "To resolve issues adding a resource to an opportunity:\n\n1. Confirm you have appropriate Cortex permissions to edit the Opportunity\n2. Verify the Opportunity is in an editable stage (not locked or closed)\n3. Check that required fields (staffing region, dates, role type) are completed\n4. Ensure the resource is active and available for the specified project dates\n5. Navigate to Opportunity → Related Tab → Resources → Add Resource\n\n[ACTION_LINK:Open Cortex Opportunity|https://bain4.lightning.force.com]",
+    "category": "resources"
+  },
+  {
+    "id": "P013b",
+    "query": "Cannot assign staff to opportunity",
+    "resolution": "To resolve issues adding a resource to an opportunity:\n\n1. Confirm you have appropriate Cortex permissions to edit the Opportunity\n2. Verify the Opportunity is in an editable stage (not locked or closed)\n3. Check that required fields (staffing region, dates, role type) are completed\n4. Ensure the resource is active and available for the specified project dates\n5. Navigate to Opportunity → Related Tab → Resources → Add Resource\n\n[ACTION_LINK:Open Cortex Opportunity|https://bain4.lightning.force.com]",
+    "category": "resources"
+  },
+  {
+    "id": "P014",
+    "query": "OH not getting approve access",
+    "resolution": "To resolve Office Head approval access issues:\n\n1. Confirm your Salesforce/Cortex role includes the necessary approval permissions for your office\n2. Verify you are mapped as the approver in the appropriate workflow for the office and opportunity type\n3. If the approval role or workflow mapping appears incorrect, request an update from your system admin\n4. Log out and log back into Salesforce/Cortex after permissions are updated\n5. Recheck the Approvals section to confirm access\n\n[ACTION_LINK:Check Approval Settings|https://bain4.lightning.force.com/lightning/o/Opportunity/list]",
+    "category": "approvals"
+  },
+  {
+    "id": "P014a",
+    "query": "Office head cannot approve",
+    "resolution": "To resolve Office Head approval access issues:\n\n1. Confirm your Salesforce/Cortex role includes the necessary approval permissions for your office\n2. Verify you are mapped as the approver in the appropriate workflow for the office and opportunity type\n3. If the approval role or workflow mapping appears incorrect, request an update from your system admin\n4. Log out and log back into Salesforce/Cortex after permissions are updated\n5. Recheck the Approvals section to confirm access\n\n[ACTION_LINK:Check Approval Settings|https://bain4.lightning.force.com/lightning/o/Opportunity/list]",
+    "category": "approvals"
+  },
+  {
+    "id": "P015",
+    "query": "OH not able to approve the case",
+    "resolution": "To resolve Office Head approval access issues:\n\n1. Confirm your Salesforce/Cortex role includes the necessary approval permissions for your office\n2. Verify you are mapped as the approver in the appropriate workflow for the office and opportunity type\n3. If the approval role or workflow mapping appears incorrect, request an update from your system admin\n4. Log out and log back into Salesforce/Cortex after permissions are updated\n5. Recheck the Approvals section to confirm access\n\n[ACTION_LINK:Check Approval Settings|https://bain4.lightning.force.com/lightning/o/Opportunity/list]",
+    "category": "approvals"
+  },
+  {
+    "id": "P016",
+    "query": "OH not able to approve the opportunity",
+    "resolution": "To resolve Office Head approval access issues:\n\n1. Confirm your Salesforce/Cortex role includes the necessary approval permissions for your office\n2. Verify you are mapped as the approver in the appropriate workflow for the office and opportunity type\n3. If the approval role or workflow mapping appears incorrect, request an update from your system admin\n4. Log out and log back into Salesforce/Cortex after permissions are updated\n5. Recheck the Approvals section to confirm access\n\n[ACTION_LINK:Check Approval Settings|https://bain4.lightning.force.com/lightning/o/Opportunity/list]",
+    "category": "approvals"
+  },
+  {
+    "id": "P016a",
+    "query": "Approval button not working for office head",
+    "resolution": "To resolve Office Head approval access issues:\n\n1. Confirm your Salesforce/Cortex role includes the necessary approval permissions for your office\n2. Verify you are mapped as the approver in the appropriate workflow for the office and opportunity type\n3. If the approval role or workflow mapping appears incorrect, request an update from your system admin\n4. Log out and log back into Salesforce/Cortex after permissions are updated\n5. Recheck the Approvals section to confirm access\n\n[ACTION_LINK:Check Approval Settings|https://bain4.lightning.force.com/lightning/o/Opportunity/list]",
+    "category": "approvals"
+  },
+  {
+    "id": "P017",
+    "query": "Getting incorrect rates for a resource",
+    "resolution": "To update incorrect resource rates:\n\n1. Open the opportunity in the Pricing Configurator\n2. Locate the resource with incorrect rates\n3. Click on 'Update Rates' to refresh the rates from the master data\n4. Save the changes and sync with Cortex\n\n[ACTION_LINK:Update Rates|https://pricing.bain.com/update-rates|TOOL_CALL:updateResourceRates]",
+    "category": "rates"
+  },
+  {
+    "id": "P017a",
+    "query": "Resource rates are wrong",
+    "resolution": "To update incorrect resource rates:\n\n1. Open the opportunity in the Pricing Configurator\n2. Locate the resource with incorrect rates\n3. Click on 'Update Rates' to refresh the rates from the master data\n4. Save the changes and sync with Cortex\n\n[ACTION_LINK:Update Rates|https://pricing.bain.com/update-rates|TOOL_CALL:updateResourceRates]",
+    "category": "rates"
+  },
+  {
+    "id": "P017b",
+    "query": "Wrong pricing rates showing",
+    "resolution": "To update incorrect resource rates:\n\n1. Open the opportunity in the Pricing Configurator\n2. Locate the resource with incorrect rates\n3. Click on 'Update Rates' to refresh the rates from the master data\n4. Save the changes and sync with Cortex\n\n[ACTION_LINK:Update Rates|https://pricing.bain.com/update-rates|TOOL_CALL:updateResourceRates]",
+    "category": "rates"
+  },
+  {
+    "id": "P018",
+    "query": "Office Head not getting approve access",
+    "resolution": "To resolve Office Head approval access issues:\n\n1. Confirm your Salesforce/Cortex role includes the necessary approval permissions for your office\n2. Verify you are mapped as the approver in the appropriate workflow for the office and opportunity type\n3. If the approval role or workflow mapping appears incorrect, request an update from your system admin\n4. Log out and log back into Salesforce/Cortex after permissions are updated\n5. Recheck the Approvals section to confirm access\n\n[ACTION_LINK:Check Approval Settings|https://bain4.lightning.force.com/lightning/o/Opportunity/list]",
+    "category": "approvals"
+  },
+  {
+    "id": "P028",
+    "query": "Update Opportunity Name for this opportunity",
+    "resolution": "I can help you update the Opportunity Name. Click the button below to perform this action:\n\n[ACTION_LINK:Update Opportunity Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateName|TOOL_CALL:updateOpportunityName]",
+    "category": "updates"
+  },
+  {
+    "id": "P028a",
+    "query": "Change opportunity name",
+    "resolution": "I can help you update the Opportunity Name. Click the button below to perform this action:\n\n[ACTION_LINK:Update Opportunity Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateName|TOOL_CALL:updateOpportunityName]",
+    "category": "updates"
+  },
+  {
+    "id": "P028b",
+    "query": "Need to rename this opportunity",
+    "resolution": "I can help you update the Opportunity Name. Click the button below to perform this action:\n\n[ACTION_LINK:Update Opportunity Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateName|TOOL_CALL:updateOpportunityName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029",
+    "query": "Please help me update Client Name for this opportunity",
+    "resolution": "I can help you update the Client Name. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029a",
+    "query": "Change client name on opportunity",
+    "resolution": "I can help you update the Client Name. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029b",
+    "query": "Wrong client name needs correction",
+    "resolution": "I can help you update the Client Name. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029c",
+    "query": "Update client name for Walmart Digital Transformation opportunity",
+    "resolution": "I can help you update the Client Name for the Walmart Digital Transformation opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029d",
+    "query": "Change client name on Flipkart Supply Chain opportunity",
+    "resolution": "I can help you update the Client Name for the Flipkart Supply Chain opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029e",
+    "query": "Update client name for Coca Cola Marketing Strategy",
+    "resolution": "I can help you update the Client Name for the Coca Cola Marketing Strategy opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029f",
+    "query": "Need to change client name for Amazon AWS Migration project",
+    "resolution": "I can help you update the Client Name for the Amazon AWS Migration opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029g",
+    "query": "Update client name for Tesla Manufacturing opportunity",
+    "resolution": "I can help you update the Client Name for the Tesla Manufacturing opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029h",
+    "query": "Change client name on Microsoft Cloud Transformation",
+    "resolution": "I can help you update the Client Name for the Microsoft Cloud Transformation opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029i",
+    "query": "Update client for Google AI Initiative opportunity",
+    "resolution": "I can help you update the Client Name for the Google AI Initiative opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029j",
+    "query": "Client name update for Nike Digital Commerce",
+    "resolution": "I can help you update the Client Name for the Nike Digital Commerce opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029k",
+    "query": "Change client name for Pepsi Retail Expansion opportunity",
+    "resolution": "I can help you update the Client Name for the Pepsi Retail Expansion opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029l",
+    "query": "Update client for Apple Product Launch",
+    "resolution": "I can help you update the Client Name for the Apple Product Launch opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029m",
+    "query": "Change client name on Samsung Electronics opportunity",
+    "resolution": "I can help you update the Client Name for the Samsung Electronics opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029n",
+    "query": "Update client name for Reliance Jio Expansion",
+    "resolution": "I can help you update the Client Name for the Reliance Jio Expansion opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029o",
+    "query": "Change client for Tata Steel Modernization project",
+    "resolution": "I can help you update the Client Name for the Tata Steel Modernization opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P029p",
+    "query": "Update client name for Infosys Digital opportunity",
+    "resolution": "I can help you update the Client Name for the Infosys Digital opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Client Name|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateClient|TOOL_CALL:updateClientName]",
+    "category": "updates"
+  },
+  {
+    "id": "P030",
+    "query": "Please change industry for this Opportunity",
+    "resolution": "I can help you update the Industry. Click the button below to perform this action:\n\n[ACTION_LINK:Update Industry|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateIndustry|TOOL_CALL:updateIndustry]",
+    "category": "updates"
+  },
+  {
+    "id": "P030a",
+    "query": "Update industry field",
+    "resolution": "I can help you update the Industry. Click the button below to perform this action:\n\n[ACTION_LINK:Update Industry|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateIndustry|TOOL_CALL:updateIndustry]",
+    "category": "updates"
+  },
+  {
+    "id": "P030b",
+    "query": "Industry is incorrect on this opportunity",
+    "resolution": "I can help you update the Industry. Click the button below to perform this action:\n\n[ACTION_LINK:Update Industry|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateIndustry|TOOL_CALL:updateIndustry]",
+    "category": "updates"
+  },
+  {
+    "id": "P030c",
+    "query": "Change industry for Walmart Digital Transformation opportunity",
+    "resolution": "I can help you update the Industry for the Walmart Digital Transformation opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Industry|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateIndustry|TOOL_CALL:updateIndustry]",
+    "category": "updates"
+  },
+  {
+    "id": "P030d",
+    "query": "Update industry for Flipkart Supply Chain opportunity",
+    "resolution": "I can help you update the Industry for the Flipkart Supply Chain opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Industry|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateIndustry|TOOL_CALL:updateIndustry]",
+    "category": "updates"
+  },
+  {
+    "id": "P030e",
+    "query": "Change industry on Coca Cola Marketing Strategy",
+    "resolution": "I can help you update the Industry for the Coca Cola Marketing Strategy opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Industry|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateIndustry|TOOL_CALL:updateIndustry]",
+    "category": "updates"
+  },
+  {
+    "id": "P030f",
+    "query": "Industry update for Amazon AWS Migration project",
+    "resolution": "I can help you update the Industry for the Amazon AWS Migration opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Industry|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateIndustry|TOOL_CALL:updateIndustry]",
+    "category": "updates"
+  },
+  {
+    "id": "P030g",
+    "query": "Update industry for Tesla Manufacturing opportunity",
+    "resolution": "I can help you update the Industry for the Tesla Manufacturing opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Industry|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateIndustry|TOOL_CALL:updateIndustry]",
+    "category": "updates"
+  },
+  {
+    "id": "P030h",
+    "query": "Change industry for Microsoft Cloud Transformation",
+    "resolution": "I can help you update the Industry for the Microsoft Cloud Transformation opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Industry|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateIndustry|TOOL_CALL:updateIndustry]",
+    "category": "updates"
+  },
+  {
+    "id": "P030i",
+    "query": "Industry is wrong for Google AI Initiative",
+    "resolution": "I can help you update the Industry for the Google AI Initiative opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Industry|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateIndustry|TOOL_CALL:updateIndustry]",
+    "category": "updates"
+  },
+  {
+    "id": "P030j",
+    "query": "Update industry for Nike Digital Commerce opportunity",
+    "resolution": "I can help you update the Industry for the Nike Digital Commerce opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Industry|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateIndustry|TOOL_CALL:updateIndustry]",
+    "category": "updates"
+  },
+  {
+    "id": "P030k",
+    "query": "Change industry on Reliance Jio Expansion",
+    "resolution": "I can help you update the Industry for the Reliance Jio Expansion opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Industry|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateIndustry|TOOL_CALL:updateIndustry]",
+    "category": "updates"
+  },
+  {
+    "id": "P030l",
+    "query": "Industry needs update for Tata Steel Modernization",
+    "resolution": "I can help you update the Industry for the Tata Steel Modernization opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Industry|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateIndustry|TOOL_CALL:updateIndustry]",
+    "category": "updates"
+  },
+  {
+    "id": "P031",
+    "query": "Please update capability for this opportunity",
+    "resolution": "I can help you update the Capability. Click the button below to perform this action:\n\n[ACTION_LINK:Update Capability|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateCapability|TOOL_CALL:updateCapability]",
+    "category": "updates"
+  },
+  {
+    "id": "P031a",
+    "query": "Change capability on opportunity",
+    "resolution": "I can help you update the Capability. Click the button below to perform this action:\n\n[ACTION_LINK:Update Capability|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateCapability|TOOL_CALL:updateCapability]",
+    "category": "updates"
+  },
+  {
+    "id": "P031b",
+    "query": "Capability field needs to be updated",
+    "resolution": "I can help you update the Capability. Click the button below to perform this action:\n\n[ACTION_LINK:Update Capability|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateCapability|TOOL_CALL:updateCapability]",
+    "category": "updates"
+  },
+  {
+    "id": "P031c",
+    "query": "Change capability for Walmart Digital Transformation opportunity",
+    "resolution": "I can help you update the Capability for the Walmart Digital Transformation opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Capability|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateCapability|TOOL_CALL:updateCapability]",
+    "category": "updates"
+  },
+  {
+    "id": "P031d",
+    "query": "Update capability for Flipkart Supply Chain opportunity",
+    "resolution": "I can help you update the Capability for the Flipkart Supply Chain opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Capability|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateCapability|TOOL_CALL:updateCapability]",
+    "category": "updates"
+  },
+  {
+    "id": "P031e",
+    "query": "Change capability on Coca Cola Marketing Strategy",
+    "resolution": "I can help you update the Capability for the Coca Cola Marketing Strategy opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Capability|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateCapability|TOOL_CALL:updateCapability]",
+    "category": "updates"
+  },
+  {
+    "id": "P031f",
+    "query": "Capability update for Amazon AWS Migration project",
+    "resolution": "I can help you update the Capability for the Amazon AWS Migration opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Capability|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateCapability|TOOL_CALL:updateCapability]",
+    "category": "updates"
+  },
+  {
+    "id": "P031g",
+    "query": "Update capability for Tesla Manufacturing opportunity",
+    "resolution": "I can help you update the Capability for the Tesla Manufacturing opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Capability|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateCapability|TOOL_CALL:updateCapability]",
+    "category": "updates"
+  },
+  {
+    "id": "P031h",
+    "query": "Change capability for Microsoft Cloud Transformation",
+    "resolution": "I can help you update the Capability for the Microsoft Cloud Transformation opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Capability|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateCapability|TOOL_CALL:updateCapability]",
+    "category": "updates"
+  },
+  {
+    "id": "P031i",
+    "query": "Capability is wrong for Google AI Initiative",
+    "resolution": "I can help you update the Capability for the Google AI Initiative opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Capability|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateCapability|TOOL_CALL:updateCapability]",
+    "category": "updates"
+  },
+  {
+    "id": "P031j",
+    "query": "Update capability for Nike Digital Commerce opportunity",
+    "resolution": "I can help you update the Capability for the Nike Digital Commerce opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Capability|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateCapability|TOOL_CALL:updateCapability]",
+    "category": "updates"
+  },
+  {
+    "id": "P031k",
+    "query": "Change capability on Reliance Jio Expansion",
+    "resolution": "I can help you update the Capability for the Reliance Jio Expansion opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Capability|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateCapability|TOOL_CALL:updateCapability]",
+    "category": "updates"
+  },
+  {
+    "id": "P031l",
+    "query": "Capability needs update for Tata Steel Modernization",
+    "resolution": "I can help you update the Capability for the Tata Steel Modernization opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Capability|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateCapability|TOOL_CALL:updateCapability]",
+    "category": "updates"
+  },
+  {
+    "id": "P031m",
+    "query": "Update capability for Apple Product Launch",
+    "resolution": "I can help you update the Capability for the Apple Product Launch opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Capability|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateCapability|TOOL_CALL:updateCapability]",
+    "category": "updates"
+  },
+  {
+    "id": "P031n",
+    "query": "Change capability for Samsung Electronics opportunity",
+    "resolution": "I can help you update the Capability for the Samsung Electronics opportunity. Click the button below to perform this action:\n\n[ACTION_LINK:Update Capability|https://bain4.lightning.force.com/lightning/action/quick/Opportunity.UpdateCapability|TOOL_CALL:updateCapability]",
+    "category": "updates"
   }
 ]
-

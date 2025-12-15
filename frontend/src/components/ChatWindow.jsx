@@ -7,7 +7,8 @@ export function ChatWindow({
   messages, 
   isLoading, 
   onSend, 
-  onBackClick
+  onBackClick,
+  onToolAction
 }) {
   return (
     <div className="flex flex-col h-full">
@@ -18,7 +19,8 @@ export function ChatWindow({
       
       <MessageList 
         messages={messages} 
-        isLoading={isLoading} 
+        isLoading={isLoading}
+        onToolAction={onToolAction}
       />
       
       <ChatInput 
